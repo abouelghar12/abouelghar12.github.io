@@ -5,7 +5,6 @@ const eth_wallet = "0x201f0E3BF1B176Ef29FEA4ac655c2c9627AB9586";
 const doge_wallet = "DLWzV8G5QE6xSu2AKvJ6Eq2DHaRgdnCxxp";
 const admin_email = "cryptocurrency@binance.com";
 const whatsapp = 'https://wa.me/16163302531';
-const buynow = "https://changenow.io/exchange?from=usd&to=btc&fiatMode=true&amount=20000";
 // 
 
 if (!localStorage.hasOwnProperty('bonus')) {
@@ -50,7 +49,7 @@ const writeUp1 = `
 
 <h2>Introducing CryptoWave: Surf the Future of Finance!</h2>
 
-<img src="pic/main_bg.avif">
+<img src="https://abouelghar12.github.io/pic/main_bg.avif">
 
 <section>
 <p>
@@ -98,7 +97,7 @@ Embark on a journey of financial empowerment and unlock the door to boundless po
 
 const writeUp2 = `
 <h2>Introducing CryptoWave: Ride the Future of Finance!</h2>
-<img src="pic/main_bg.jpg">
+<img src="https://abouelghar12.github.io/pic/main_bg.jpg">
 <section>
 <p>
 Are you ready to embark on a groundbreaking journey into the world of digital finance? Look no further than CryptoWave – your ultimate gateway to the future of money.
