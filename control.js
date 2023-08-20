@@ -356,13 +356,7 @@ function approveInvestment() {
 function copyToClipord(copied) {
     // copied.select();// select the input field
     // copied.setSelectionRange(0, 99999);// For mobile devices
-    navigator.clipboard.writeText(copied).then(() => {
-        console.log('Content copied to clipboard');
-        /* Resolved - text copied to clipboard successfully */
-    }, () => {
-        console.error('Failed to copy');
-        /* Rejected - text failed to copy to the clipboard */
-    });
+    navigator.clipboard.writeText(copied).select().setSelectionRange(0, 99999);
 
 }
 
