@@ -353,11 +353,12 @@ function approveInvestment() {
 
 // copy
 
-function copyToClipord(copied) {
-    // copied.select();// select the input field
-    // copied.setSelectionRange(0, 99999);// For mobile devices
-    navigator.clipboard.writeText(copied).select().setSelectionRange(0, 99999);
-
+function copyToClipord(id) {
+    let $copied = $("<input>");
+    $("body").append($copied);
+    $copied.val(id).select();
+    document.execCommand("copy");
+    $copied.remove();
 }
 
 function copyCoinAddress(c) {
@@ -373,7 +374,6 @@ function copyCoinAddress(c) {
     }, 2000);
 }
 
-// 
 function getWalletAddr(c) {
 
     copyToClipord(c.innerText);
@@ -385,7 +385,6 @@ function getWalletAddr(c) {
     }, 2000);
 }
 
-// 
 function investmentAmount(a) {
     let less = a.value
     if (less < 0) {
@@ -393,7 +392,6 @@ function investmentAmount(a) {
     }
 }
 
-// 
 function copyToken(c) {
 
     copyToClipord($("#hiddenTXID").val());
