@@ -92,33 +92,33 @@ const mainPageShow = `
 
    <div id="post_center">
    <p onclick="approveInvestment()">
-   <img src="https://abouelghar12.github.io/icon/icon/bitcoin.png">
+   <img src="https://abouelghar12.github.io/icon/bitcoin.png">
    <span>Bitcoin</span>
    </p>
 
    <p onclick="approveInvestment()">
-   <img src="https://abouelghar12.github.io/icon/icon/bnb.png">
+   <img src="https://abouelghar12.github.io/icon/bnb.png">
    <span>Binance</span>
    </p>
 
    <p onclick="approveInvestment()">
-   <img src="https://abouelghar12.github.io/icon/icon/ethereum.png">
+   <img src="https://abouelghar12.github.io/icon/ethereum.png">
    <span>Ethereum</span>
    </p>
 
    <p onclick="approveInvestment()">
-   <img src="https://abouelghar12.github.io/icon/icon/tether.png">
+   <img src="https://abouelghar12.github.io/icon/tether.png">
    <span>Tether</span>
    </p>
 
    <p onclick="approveInvestment()">
-   <img src="https://abouelghar12.github.io/icon/icon/doge.png">
+   <img src="https://abouelghar12.github.io/icon/doge.png">
    <span>Dogecoin</span>
    </p>
    </div>
 
    <div id="promo_write_up">
-   <img src="https://abouelghar12.github.io/icon/pic/promo.png">
+   <img src="https://abouelghar12.github.io/pic/promo.png">
    <section>
    ${randomAds}
    </section>
@@ -224,7 +224,7 @@ const showSettings = `
 <div id="app_settings">
 
 <section id="app_settings1">
-<img src="https://abouelghar12.github.io/icon/pic/settings_bg.png" />
+<img src="https://abouelghar12.github.io/pic/settings_bg.png" />
 </section>
 
 <section id="app_settings2">
@@ -248,12 +248,12 @@ const showSettings = `
 <span>
 
 <span class="app_wallet_icons">
-<img src="https://abouelghar12.github.io/icon/icon/bnb.png">
+<img src="https://abouelghar12.github.io/icon/bnb.png">
 <span class="app_wallet_addr" onclick="getWalletAddr(this)">${bnb_wallet}</span>
 </span>
 
 <span> 
-<img id="app_wallet_barcode" src="https://abouelghar12.github.io/icon/barcode/bnb.jpg" />
+<img id="app_wallet_barcode" src="https://abouelghar12.github.io/barcode/bnb.jpg" />
 </span>
 
 <span class="app_wallet_btn">
@@ -301,8 +301,8 @@ const showMessage = `
 $("#bnbMain").html(
    `
    <div id="chatContainer">
-   <img onclick="whatsApp()" src="https://abouelghar12.github.io/icon/icon/Whatsapp.svg" /> 
-   <img onclick="msgApp()" src="https://abouelghar12.github.io/icon/icon/mailbox.webp" />
+   <img onclick="whatsApp()" src="https://abouelghar12.github.io/icon/Whatsapp.svg" /> 
+   <img onclick="msgApp()" src="https://abouelghar12.github.io/icon/mailbox.webp" />
    </div>
 
    <div id="bnbMainContainer">
