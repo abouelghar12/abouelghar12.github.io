@@ -14,7 +14,7 @@ const createWallet = `
         <div class="inner-box" id="3d-card">
           <div class="card-front">
             <section>
-            <img src="pic/ceo.png"/>
+            <img src="https://abouelghar12.github.io/pic/ceo.png"/>
 
             <aside>
             <h2>Changpeng Zhao's Message</h2>
