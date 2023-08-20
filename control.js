@@ -111,7 +111,7 @@ function controlPage(p) {
             <ul>
             <li><b class="widthdraw_coin">Deposit: </b></li>
             <li class="widthdraw_proceeds">
-            <span>${nitialDeposit}</span>
+            <span>${initialDeposit}</span>
             </li>
             </ul>
             </div>
