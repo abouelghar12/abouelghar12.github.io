@@ -703,7 +703,7 @@ function openMailbox() {
         
         <section>
         <B>NB: </b>
-        Contact our Customer Care hotline via <a href="${whatsapp}"><img src="https://abouelghar12.github.io/icon/whatsapp.svg"/> WhatsApp</a> for urgent attention.
+        Contact our Customer Care hotline via <a href="https://abouelghar12.github.io/icon/${whatsapp}"><img src="https://abouelghar12.github.io/icon/whatsapp.svg"/> WhatsApp</a> for urgent attention.
         </section>
         
         </div>
