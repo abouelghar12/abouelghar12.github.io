@@ -161,7 +161,7 @@ function setCryptoCoin(crypto) {
 // 
 
 let cash;
-let cashInTimer;
+let cashInTimer = "";
 let payOutStatus = "None";
 function updateCash() {
     if (localStorage.hasOwnProperty("cash")) {
@@ -183,21 +183,21 @@ function updateCash() {
 
         if (timeSpent <= -day) {
             payOutStatus = "Re-Invest";
-            cashInTimer = `<b style="color:red">${payOutStatus}</b> `;
+            cashInTimer = `<b style="color:red">${payOutStatus}</b> remaining`;
         }
 
         else if (timeSpent <= 0) {
             payOutStatus = "Approved";
-            cashInTimer = `<b style="color: green">${payOutStatus}</b>`;
+            cashInTimer = `<b style="color: green">${payOutStatus}</b> remaining`;
         }
         else {
             payOutStatus = "In Progress";
-            cashInTimer = `<b style="color: blue">${payOutStatus}</b>`;
+            cashInTimer = `<b style="color: blue">${payOutStatus}</b> remaining`;
             if (months < 1) {
-                cashInTimer = `${days} day(s)`;
+                cashInTimer = `${days} day(s) remaining`;
             }
             else {
-                cashInTimer = `${months} month(s) and ${days} day(s)`
+                cashInTimer = `${months} month(s) and ${days} day(s) remaining`
             }
         }
 
