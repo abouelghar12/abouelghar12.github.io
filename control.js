@@ -96,7 +96,7 @@ function controlPage(p) {
         if (localStorage.hasOwnProperty('bonus')) {
             widthdrawTemp = `
 
-            <div id="investment_status_update"><b>Status: </b> ${cashInTimer} remaining</div>
+            <div id="investment_status_update"><b>Status: </b> ${cashInTimer}</div>
         
             <div class="widthdrawFlexTable">
             <ul>
