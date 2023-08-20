@@ -451,6 +451,11 @@
         width: 20%;
     }
 
+    #logout_container button {
+        font-size: 0.9rem;
+        margin: 0rem 0.4rem;
+    }
+
     #wallet_menu aside h1 {
         word-spacing: 3px;
         letter-spacing: 2px;
