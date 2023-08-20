@@ -143,6 +143,10 @@
     color: black;
 }
 
+#investmentContainer {
+    overflow: auto;
+}
+
 #investmentContainer th,
 #investmentContainer td {
     margin: 1rem 0rem;
@@ -194,14 +198,14 @@
 
 #investmentContainer button {
     border: none;
-    padding: 0.2rem 1rem;
+    padding: 0.2rem 0.5rem;
     font-size: inherit;
     background-color: black;
     color: white;
     cursor: pointer;
     border-radius: 3px;
-    font-weight: 5100;
-    width: 100px;
+    font-weight: 500;
+    min-width: 50px;
 }
 
 #investmentContainer button:hover {
