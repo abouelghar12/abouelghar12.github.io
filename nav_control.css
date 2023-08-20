@@ -1006,11 +1006,7 @@
         font-size: inherit;
     }
 
-    .enter_selected_amount p span b {
-        display: none;
-    }
-
-    #active_investment_container {
+    */ #active_investment_container {
         font-size: 1rem;
     }
 
@@ -1065,6 +1061,22 @@
 
     #messagebox_content {
         min-width: 80vw;
+    }
+
+
+    .enter_selected_amount p span {
+        flex-wrap: wrap;
+    }
+
+    .enter_selected_amount p select,
+    .enter_selected_amount p input {
+        min-width: 90% !important;
+    }
+
+    .wallet_side_note a {
+        text-align: center;
+        min-width: 70px;
+        padding: 0.1rem 0.2rem;
     }
 }
 
@@ -1305,5 +1317,10 @@
     #wallet_approve p,
     #wallet_approve p span {
         font-size: 0.5rem;
+    }
+
+    .wallet_side_note a {
+        font-size: 0.6rem;
+        min-width: 40px;
     }
 }
