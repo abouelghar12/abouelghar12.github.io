@@ -1,0 +1,1309 @@
+#chatContainer {
+    position: fixed;
+    right: 0.3rem;
+    bottom: 0rem;
+    z-index: 5;
+}
+
+#chatContainer img {
+    display: block;
+    height: 50px;
+    object-fit: contain;
+    cursor: pointer;
+    margin: 0.5rem 0rem;
+    padding: 2px;
+}
+
+#chatContainer img:hover {
+    box-shadow: 0px 0px 3px 1px #008080;
+    border-radius: 3px;
+}
+
+#bnbMainContainer h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 0.5rem 0.2rem 0.3rem 0.2rem;
+    color: darkred;
+    border: 1px solid black;
+    border-width: 0px 0px 1px 0px;
+}
+
+#bnbMainContainer table {
+    width: 99%;
+    font-size: 1.1rem;
+    margin: 1rem 0.5rem;
+    border-collapse: collapse;
+}
+
+#portfolioContainer table tr:nth-child(even) {
+    background-color: rgba(37, 34, 34, 0.9);
+    color: white;
+}
+
+#portfolioContainer table td {
+    padding: 1rem 0.5rem;
+    border: 1px solid gray;
+}
+
+#portfolioContainer table th {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#portfolioContainer h3 {
+    margin-top: 1rem;
+}
+
+.table_amount_row ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.table_amount_row b {
+    color: #7CFC00;
+}
+
+.table_transactions {
+    text-align: center;
+}
+
+.table_transactions i {
+    color: #4682B4;
+    padding: 0rem 0.5rem;
+}
+
+#investment_status_update {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: large;
+}
+
+.widthdrawFlexTable {
+    width: 99%;
+    margin: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.widthdrawFlexTable ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    border: 1px solid silver;
+    border-width: 0px 0px 1px 0px;
+    margin: 0.2rem 0rem;
+}
+
+.widthdrawFlexTable ul li {
+    width: 100%;
+}
+
+.widthdrawFlexTable ul li select {
+    padding: 0.3rem 0.5rem;
+    font-size: inherit;
+    margin-right: 1rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#hide_widthdraw_btn button {
+    visibility: hidden;
+    background: black;
+    border: none;
+    padding: 0.3rem 1rem;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 5100;
+}
+
+#hide_widthdraw_btn button:hover {
+    color: goldenrod;
+}
+
+.widthdrawFlexTable p {
+    font-size: 1.5rem;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.widthdrawFlexTable i {
+    font-size: 1rem;
+    color: black;
+}
+
+#investmentContainer th,
+#investmentContainer td {
+    margin: 1rem 0rem;
+    padding: 1rem 0.5rem;
+    border: 1px solid silver;
+    border-width: 0px 0px 1px 0px;
+    font-size: 1.1rem;
+}
+
+#investmentContainer th {
+    font-size: 1.5rem;
+}
+
+.investTableBegin,
+.investTableLast {
+    width: 20%;
+}
+
+.investTableMiddle {
+    width: 60%;
+}
+
+.enter_selected_amount p {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.enter_selected_amount p span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.enter_selected_amount p select,
+.enter_selected_amount p input {
+    padding: 0.2rem;
+    outline: none;
+    min-width: 10% !important;
+}
+
+#investmentContainer th button {
+    font-size: 1.1rem;
+    padding: 0;
+    background: transparent;
+    color: black;
+    font-weight: bold;
+}
+
+#investmentContainer button {
+    border: none;
+    padding: 0.2rem 1rem;
+    font-size: inherit;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 5100;
+    width: 100px;
+}
+
+#investmentContainer button:hover {
+    color: goldenrod;
+}
+
+#reset_investment_btn {
+    float: right;
+    font-size: inherit;
+    color: white;
+    background: black;
+    color: white;
+    font-weight: 500;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    margin: 1rem 0.5rem;
+}
+
+#reset_investment_btn:hover {
+    color: gold;
+}
+
+#investmentContainer td select {
+    display: block;
+    min-width: 50%;
+    padding: 0.2rem 0.5rem;
+}
+
+#select_holder_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#select_holder_icon span {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+#select_holder_icon img {
+    width: 30px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+#wallet_selected {
+    padding-top: 0.5rem;
+}
+
+#wallet_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#wallet_header img {
+    height: 50px;
+    object-fit: contain;
+}
+
+#wallet_approve {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+#wallet_approve img {
+    width: 200px;
+    object-fit: contain;
+    padding: 10px 0px;
+    border-radius: 5px;
+    background-color: black;
+}
+
+#wallet_approve button:hover {
+    background-color: black;
+    color: gold;
+}
+
+#wallet_balance,
+#barcode_container {
+    width: 45%;
+    box-shadow: 0px 0px 3px 1px;
+    min-height: 60vh;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.wallet_side_note span {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    color: gray;
+}
+
+.wallet_side_note a {
+    min-width: auto;
+    /* font-weight: bold; */
+    border: 1px solid #353935;
+    background: #353935;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+#wallet_balance p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    border: 1px solid silver;
+    border-width: 1px 0px 0px 0px;
+}
+
+#wallet_balance p b,
+#wallet_balance p span,
+#wallet_balance p button {
+    /* width: 100%; */
+    margin: 0.5rem 0rem;
+}
+
+#wallet_balance p button {
+    cursor: pointer;
+    min-width: 10%;
+    font-style: normal;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid silver;
+    border-radius: 4px;
+}
+
+#wallet_balance p button:hover {
+    font-weight: bold;
+}
+
+#wallet_balance p b {
+    color: darkred;
+}
+
+#wallet_balance h2,
+#barcode_container h2 {
+    text-align: center;
+    margin: 0rem 0rem 1rem 0rem;
+    padding: 0.5rem 0.1rem;
+    font-weight: 500;
+    color: white;
+    background-color: darkgreen;
+}
+
+#barcode_container section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#barcode_container section div,
+#barcode_container section div span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%
+}
+
+#barcode_swift_code h4 {
+    margin-bottom: 0.5rem;
+}
+
+#barcode_container section div input {
+    width: 100%;
+    padding: 0.3rem;
+    outline: none;
+}
+
+#barcode_container section div h4 {
+    color: gray;
+}
+
+#barcode_container button {
+    display: block;
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+    margin: 1rem 0.5rem;
+    min-width: 100px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid silver;
+    border-radius: 4px;
+}
+
+#app_settings {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    margin: 1rem 0rem;
+    padding: 0rem 2rem;
+    gap: 2rem;
+}
+
+#app_settings section {
+    min-height: 400px;
+}
+
+#app_settings1 img {
+    height: 400px;
+    object-fit: contain;
+    opacity: 0.9;
+}
+
+#app_settings2 {
+    box-shadow: -2px 0px 3px 1px gold;
+    font-size: 1.1rem;
+    min-width: 80%;
+}
+
+#app_settings2 h3 {
+    background: goldenrod;
+    text-align: center;
+    color: rgb(26, 25, 25);
+    padding: 0.5rem 0rem;
+}
+
+#app_settings2 p {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 2rem;
+}
+
+#app_settings2 span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 300;
+}
+
+#app_details {
+    font-weight: 300;
+}
+
+#app_details b {
+    color: #4682B4;
+}
+
+.app_wallet_addr:hover {
+    cursor: pointer;
+    color: #4682B4;
+}
+
+.app_wallet_icons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#app_wallet_btn_input {
+    display: none;
+    padding: 0.2rem 0.5rem;
+    outline: none;
+    font-size: inherit;
+    background: white;
+}
+
+.app_wallet_btn button {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: inherit;
+    padding: 0.2rem 0.5rem;
+    margin: 0.2rem 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.app_wallet_btn button:hover {
+    color: goldenrod;
+}
+
+#app_settings2 img {
+    height: 30px;
+    object-fit: contain;
+}
+
+#app_wallet_barcode {
+    height: 150px !important;
+    background-color: black;
+    padding: 10px 0px 5px 0px;
+}
+
+.sent_token_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 30vh;
+    width: 100%
+}
+
+.sent_token_box {
+    width: 50%;
+}
+
+.sent_token_box div {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.sent_token_box div input,
+.sent_token_box div button,
+.sent_token_box div b {
+    outline: none;
+    padding: 0.2rem 0.5rem;
+    font-size: 1.1rem;
+}
+
+.sent_token_box div input {
+    width: 50%;
+}
+
+.sent_token_box div button {
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 0.2rem 1rem;
+    border: none;
+}
+
+.sent_token_box div button:hover {
+    color: goldenrod;
+    cursor: pointer;
+}
+
+#transaction_update details div {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    background: rgb(20, 19, 19);
+    color: goldenrod;
+    padding: 1rem 0.5rem;
+
+}
+
+#transaction_update details div button {
+    font-size: inherit;
+    background: transparent;
+}
+
+#active_investment_container {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+
+}
+
+#active_investment_container section {
+    width: 50%;
+}
+
+#active_investment_container section p {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0rem;
+}
+
+#active_investment_container section p b,
+#active_investment_container section p span,
+#active_investment_container section p i {
+    width: 100%;
+}
+
+#status_widthdrawal {
+    display: flex;
+    min-height: 30vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+#status_widthdrawal b {
+    margin: 0rem 0.5rem;
+    color: darkred
+}
+
+#message_container {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#preload_message {
+    width: 100px;
+    height: 100px;
+    border: 5px solid goldenrod;
+    border-width: 0px 0px 0px 5px;
+    border-radius: 50%;
+    animation: loadMsg 1.5s ease-in-out infinite;
+}
+
+@keyframes loadMsg {
+    from {
+        transform: rotate(-360deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#messagebox_content {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #353935;
+    color: whitesmoke;
+    min-width: 30vw;
+    min-height: 50vh;
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 0px 3px 1px;
+    border-radius: 5px;
+}
+
+#messagebox_content div {
+    margin: 1rem 0.5rem;
+}
+
+#messagebox_content div p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#messagebox_content input {
+    width: 80%;
+    outline: none;
+    padding: 0.2rem 0.5rem;
+    background: white;
+}
+
+#messagebox_content textarea {
+    outline: none;
+    width: 100%;
+    height: 35vh;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+#messagebox_content button {
+    padding: 0.2rem 0.5rem;
+    font-size: inherit;
+    margin-top: 1rem;
+    margin-left: 80%;
+    background-color: #4682B4;
+    color: whitesmoke;
+    border-radius: 4px;
+}
+
+#messagebox_content button:hover {
+    color: white;
+    box-shadow: 0px 0px 3px 1px;
+}
+
+#mailbox_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+}
+
+#mailbox_container section {
+    width: 50%;
+    font-size: large;
+    margin-top: 2%;
+}
+
+#mailbox_container section b {
+    font-size: larger;
+}
+
+#mailbox_container section p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid gray;
+    border-width: 0px 0px 1px 0px;
+    padding: 0.3rem 0.5rem;
+}
+
+#mailbox_container section div {
+    margin-top: 2%;
+    padding: 0.5rem 1rem;
+}
+
+#mailbox_container section p sup {
+    /* color: green; */
+    font-size: small;
+    font-weight: 500;
+}
+
+#mailbox_container section div section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: small;
+    font-style: italic;
+    color: gray;
+}
+
+#mailbox_container section div section a {
+    display: flex;
+    align-items: center;
+}
+
+#mailbox_container section div img {
+    height: 30px;
+    object-fit: contain;
+}
+
+/*  */
+
+@media (max-width: 1030px) {
+    #app_settings2 {
+        min-width: 75%;
+    }
+
+    #wallet_approve {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    #wallet_header img {
+        height: 100px;
+    }
+
+    #wallet_approve img {
+        width: 300px;
+        padding: 20px 0px 10px 0px;
+    }
+
+    #wallet_balance,
+    #barcode_container {
+        width: 70%;
+        min-height: auto;
+    }
+
+    #chatContainer {
+        bottom: 5rem;
+    }
+
+    #chatContainer img {
+        height: 40px;
+    }
+
+    #messagebox_content {
+        min-width: 60vw;
+    }
+
+    #messagebox_content button {
+        margin-left: 85%;
+    }
+
+    #active_investment_container section {
+        width: 80%;
+    }
+
+    #active_investment_container section p {
+        border: 1px solid silver;
+        border-width: 0px 0px 1px 0px;
+        padding: 0.5rem 0rem;
+    }
+}
+
+@media (max-width: 900px) {
+    #app_settings {
+        padding: 0rem;
+    }
+
+    #app_settings section {
+        min-height: 80vh;
+    }
+
+    #app_settings1 {
+        width: 500px;
+        height: auto;
+        position: relative;
+    }
+
+    #app_settings1 img {
+        height: 400px;
+        position: absolute;
+        left: 5%;
+        top: 25%;
+        padding: 2px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 3px 1px goldenrod;
+        background-color: black;
+    }
+
+    #app_settings2 {
+        min-width: 68%;
+        margin-right: 0px;
+        overflow: hidden;
+    }
+
+    #app_settings2 h3 {
+        margin: 3rem 0rem;
+    }
+
+    #app_main_wallets,
+    #app_main_wallets span {
+        flex-wrap: wrap;
+    }
+
+    #app_main_wallets span {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .app_wallet_icons,
+    .app_wallet_btn {
+        flex-wrap: wrap;
+    }
+
+    #app_settings2 img {
+        height: 100px;
+    }
+
+    #app_wallet_barcode {
+        height: 250px !important;
+        padding: 10px 0px 5px 0px;
+        margin: 2rem 0.2rem 1rem 0.2rem;
+    }
+
+    #investmentContainer th,
+    #investmentContainer td {
+        font-size: 1rem;
+    }
+
+    #investmentContainer th {
+        font-size: 1.3rem;
+    }
+
+    #investmentContainer td input {
+        width: 30%;
+    }
+
+    #active_investment_container section {
+        width: 85%;
+    }
+
+    #wallet_approve img {
+        width: 250px;
+    }
+
+    #messagebox_content {
+        min-width: 70vw;
+    }
+}
+
+@media (max-width:800px) {
+    #app_settings1 img {
+        height: 350px;
+    }
+
+    #portfolioContainer table {
+        font-size: 1rem;
+    }
+
+    #portfolioContainer table th {
+        font-size: 1.3rem;
+    }
+
+    #portfolioContainer h3 {
+        margin-top: 1.1rem;
+    }
+
+    .sent_token_box {
+        width: 70%;
+    }
+
+    #barcode_swift_code {
+        flex-wrap: wrap;
+    }
+
+    #barcode_container section div input {
+        width: 70%;
+    }
+}
+
+@media (max-width: 650px) {
+    #app_settings {
+        flex-wrap: wrap;
+    }
+
+    #app_settings section {
+        min-height: auto;
+    }
+
+    #bnbMainContainer h1 {
+        font-size: 1.5rem;
+    }
+
+    #portfolioContainer table {
+        font-size: 0.8rem;
+    }
+
+    #portfolioContainer table th {
+        font-size: 1.2rem;
+    }
+
+    #portfolioContainer h3 {
+        margin-top: 1rem;
+    }
+
+    #app_settings1 {
+        width: auto;
+        height: auto;
+        position: relative;
+    }
+
+    #app_settings1 img {
+        height: 75px;
+        position: absolute;
+        left: 5%;
+        top: 0%;
+        padding: 1px 5px;
+        border-radius: 0%;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    #app_settings2 {
+        min-width: 68%;
+        margin-right: 0px;
+        overflow: hidden;
+    }
+
+    #app_settings2 h3 {
+        margin: 0rem;
+    }
+
+    #app_main_wallets,
+    #app_main_wallets span {
+        flex-wrap: wrap;
+    }
+
+    #app_main_wallets span {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .app_wallet_icons,
+    .app_wallet_btn {
+        flex-wrap: wrap;
+    }
+
+    #app_settings2 img {
+        height: 70px;
+    }
+
+    #app_wallet_barcode {
+        height: 300px !important;
+        padding: 30px 0px 15px 0px;
+    }
+
+    #investmentContainer th,
+    #investmentContainer td {
+        font-size: 0.9rem;
+    }
+
+    #investmentContainer th {
+        font-size: 1rem;
+    }
+
+    #investmentContainer td select {
+        width: auto;
+    }
+
+    #investmentContainer td input {
+        width: 50%;
+    }
+
+    #investmentContainer td button {
+        font-size: inherit;
+    }
+
+    .enter_selected_amount p span b {
+        display: none;
+    }
+
+    #active_investment_container {
+        font-size: 1rem;
+    }
+
+    #active_investment_container section {
+        width: 95%;
+    }
+
+    #wallet_header img {
+        height: 70px;
+    }
+
+    #wallet_balance,
+    #barcode_container {
+        width: 90%;
+    }
+
+    #wallet_approve img {
+        width: 250px;
+    }
+
+    .sent_token_box {
+        width: 90%;
+    }
+
+    .app_wallet_btn button {
+        font-size: 1.2rem;
+        padding: 0.2rem 1rem;
+    }
+
+    #chatContainer {
+        bottom: 1rem;
+    }
+
+    #active_investment_container section p span {
+        display: none;
+    }
+
+    #active_investment_container section p b,
+    #active_investment_container section p span,
+    #active_investment_container section p i {
+        width: auto;
+    }
+
+    #investment_status_update {
+        font-size: 0.9rem;
+    }
+
+    .widthdrawFlexTable,
+    .widthdrawFlexTable ul li select {
+        font-size: 1rem;
+    }
+
+    #messagebox_content {
+        min-width: 80vw;
+    }
+}
+
+@media (max-width: 500px) {
+    #app_details {
+        font-size: smaller;
+    }
+
+    #bnbMainContainer h1 {
+        font-size: 1.3rem;
+    }
+
+    #portfolioContainer table {
+        font-size: 0.8rem;
+    }
+
+    #portfolioContainer table th {
+        font-size: 1rem;
+    }
+
+    #portfolioContainer h3 {
+        margin-top: 0.9rem;
+    }
+
+    #app_settings2 {
+        margin-top: 4%;
+    }
+
+    #app_settings2 h3 {
+        padding: 0.3rem 0rem;
+    }
+
+    #app_settings2 p {
+        margin: 1rem;
+    }
+
+    #app_settings2 img {
+        height: 50px;
+    }
+
+    #app_wallet_barcode {
+        height: 250px !important;
+        padding: 20px 0px 10px 0px;
+    }
+
+    #app_settings1 img {
+        height: 85px;
+    }
+
+    #chatContainer img {
+        height: 30px;
+    }
+
+    .widthdrawFlexTable,
+    .widthdrawFlexTable ul li select,
+    .widthdrawFlexTable ul li button {
+        font-size: 0.9rem;
+    }
+
+    .widthdrawFlexTable ul li select {
+        width: 40%;
+    }
+
+    .widthdrawFlexTable ul li button {
+        float: right;
+        margin-right: 0.5rem;
+    }
+
+    #status_widthdrawal {
+        display: inline-block;
+        min-height: auto;
+        font-size: 0.9rem;
+        margin: 5rem 1rem;
+    }
+
+    #status_widthdrawal b {
+        margin: 0rem 0.2rem;
+    }
+
+    .app_wallet_btn button {
+        font-size: 1rem;
+    }
+
+    #messagebox_content button {
+        margin-left: 50%;
+    }
+
+    #wallet_header img {
+        height: 60px;
+    }
+}
+
+@media (max-width: 400px) {
+    #app_settings2 {
+        margin-top: 5.5%;
+        font-size: 0.9rem;
+    }
+
+    #app_settings2 h3 {
+        padding: 0.3rem 0rem;
+        font-size: 1.1rem;
+    }
+
+    #app_settings2 p {
+        margin: 1rem 0.5rem;
+    }
+
+    #bnbMainContainer table {
+        width: 95%;
+    }
+
+    .widthdrawFlexTable {
+        width: 95%;
+    }
+
+    .widthdrawFlexTable,
+    .widthdrawFlexTable ul li select,
+    .widthdrawFlexTable ul li button {
+        font-size: 0.7rem;
+    }
+
+    .widthdrawFlexTable ul li select,
+    .widthdrawFlexTable ul li button {
+        padding: 2px 5px !important;
+    }
+
+    .widthdrawFlexTable ul li select {
+        width: auto;
+    }
+
+    #active_investment_container {
+        font-size: 0.8rem;
+    }
+
+    #app_wallet_barcode {
+        height: 200px !important;
+        padding: 20px 0px 10px 0px;
+    }
+
+    #portfolioContainer table {
+        font-size: 0.7rem;
+    }
+
+    #portfolioContainer table th {
+        font-size: 1rem;
+    }
+
+    #portfolioContainer h3 {
+        margin-top: 1rem;
+    }
+
+    .app_wallet_btn button {
+        font-size: 0.9rem;
+    }
+
+    #messagebox_content {
+        min-width: 92vw;
+        padding: 0.5rem 0.3rem;
+    }
+
+    #messagebox_content input {
+        width: 70%;
+        padding: 0.2rem;
+    }
+
+    #wallet_approve img {
+        width: 200px;
+    }
+
+    #wallet_header img {
+        height: 50px;
+    }
+}
+
+@media (max-width: 300px) {
+    #bnbMainContainer {
+        overflow: auto;
+    }
+
+    #app_wallet_barcode {
+        height: 150px !important;
+        padding: 10px 0px 5px 0px;
+    }
+
+    #app_settings2 {
+        margin-top: 10.5%;
+        font-size: 0.7rem;
+    }
+
+    #app_settings2 h3 {
+        padding: 0.3rem 0rem;
+        font-size: 1rem;
+    }
+
+    #app_settings2 img {
+        height: 30px;
+    }
+
+    #bnbMainContainer h1 {
+        font-size: 1rem;
+    }
+
+    #investment_status_update {
+        font-size: 0.6rem;
+    }
+
+    .widthdrawFlexTable,
+    .widthdrawFlexTable ul li select,
+    .widthdrawFlexTable ul li button {
+        font-size: 0.6rem;
+    }
+
+    .widthdrawFlexTable ul {
+        padding: 0.2rem 0rem;
+    }
+
+    #active_investment_container {
+        font-size: 0.6rem;
+    }
+
+    #wallet_approve img {
+        width: 150px;
+    }
+
+    #wallet_header img {
+        height: 40px;
+    }
+
+    #wallet_approve h2 {
+        font-size: 0.9rem;
+        padding: 0.2rem;
+    }
+
+    .wallet_side_note {
+        font-size: 6px !important;
+    }
+
+    #wallet_approve p,
+    #wallet_approve p span {
+        font-size: 0.5rem;
+    }
+}

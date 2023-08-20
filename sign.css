@@ -1,0 +1,565 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Calibri, sans-serif;
+    transition: transform 1s;
+    scroll-behavior: smooth;
+    word-wrap: break-word;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+input {
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+#bnbLoading {
+    background-image: url(pic/loader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: color-burn;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(170, 156, 156);
+    overflow: hidden;
+}
+
+#bnbLoading img {
+    object-fit: contain;
+    box-shadow: 2px -2px 5px 1px black, -2px -2px 5px 1px goldenrod;
+    border-radius: 50%;
+    animation: rotateLoader 2s ease-in-out infinite;
+}
+
+@keyframes rotateLoader {
+    from {
+        transform: rotateY(-360deg);
+    }
+
+    to {
+        from {
+            transform: rotateY(0deg);
+        }
+    }
+}
+
+#checkbox_checked {
+    accent-color: goldenrod;
+}
+
+#signUpPage {
+    /* overflow: hidden; */
+    background-image: url(pic/promo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#signMainPage {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#signNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    padding: 0.5rem 1rem;
+}
+
+#signNav h1 {
+    font-family: Impact, sans-serif;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+    font-weight: 300;
+
+}
+
+#signNav img {
+    width: 4%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+
+/*  */
+
+.container {
+    width: 100%;
+    height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(218, 165, 32, 0.5);
+    color: goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card {
+    width: 100%;
+    height: 100vh;
+    perspective: 1000px;
+    padding-top: 5rem;
+}
+
+.inner-box {
+    position: relative;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(pic/sign_up.jpg);
+    padding: 55px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.card-back button .btn {
+    display: flex;
+    align-items: center;
+}
+
+.card-back button span {
+    font-size: smaller;
+    font-weight: 300;
+}
+
+.input-box {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    border-width: 0px 0px 1px 0px;
+    margin: 6px 0;
+    padding: 0.2rem 0.5rem;
+    outline: none;
+    text-align: center;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.submit-btn {
+    position: relative;
+}
+
+.card-back section div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.card-back p {
+    color: white;
+    font-size: 1.1rem;
+    margin: 1rem 0rem;
+}
+
+.card-back button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: none;
+    margin: 0.5rem 0rem;
+    font-size: 1rem;
+    border-radius: 2px;
+    padding: 0.2rem 1rem;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.card-back button:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+.card-back input:focus {
+    border-color: goldenrod;
+}
+
+.card-back input::placeholder {
+    color: lightslategray;
+    font-size: 1.1rem;
+}
+
+.card-front {
+    color: white;
+}
+
+.card-front section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    width: 100%;
+    min-height: 30vh;
+}
+
+.card-front section aside h2 {
+    font-size: 2rem;
+    color: goldenrod;
+    margin: 1rem 0rem;
+}
+
+.card-front section aside h3 {
+    color: aquamarine;
+    font-weight: 500;
+}
+
+.card-front section aside div {
+    text-align: center;
+    color: goldenrod;
+}
+
+.card-front section aside q {
+    display: block;
+    font-size: 1.3rem;
+    margin: 1rem 4rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.card-front section aside p {
+    font-size: 1.5rem;
+}
+
+.card-front section aside p span {
+    display: block;
+    text-align: right;
+    font-size: 1rem;
+    color: silver;
+}
+
+.card-front section img {
+    height: 50vh;
+    object-fit: cover;
+    opacity: 0.9;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 1rem 0rem;
+    box-shadow: 2px -2px 5px 2px white, -2px 2px 5px 2px goldenrod;
+    /* margin: 0.5rem 1rem; */
+
+}
+
+#createBtnBox {
+    width: 100%;
+    text-align: center;
+}
+
+#createBtnBox button {
+    border: none;
+    outline: none;
+    padding: 0.3rem 1rem;
+    background-color: goldenrod;
+    margin: 2rem 0rem 0rem 0rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#createBtnBox button:hover {
+    color: white;
+}
+
+#user_sign_on {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    align-items: center;
+    background-color: white;
+    min-height: 40vh;
+    padding: 1rem;
+}
+
+#user_sign_on input {
+    width: 80%;
+}
+
+#user_sign_on input,
+#user_sign_on button {
+    height: 50px;
+
+}
+
+/*  */
+
+@media (max-width: 1030px) {
+    #signNav {
+        padding: 1rem;
+    }
+
+    #signNav h1 {
+        font-size: 500;
+    }
+
+    #signNav img {
+        width: 8%;
+    }
+
+    .card {
+        padding-top: 8rem;
+    }
+
+    .card-back,
+    .card-front {
+        overflow: auto;
+    }
+
+    .card-front section {
+        flex-wrap: wrap;
+    }
+
+    .card-front section img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .card-back h2 {
+        font-size: 2rem;
+    }
+
+    .card-back button {
+        font-size: 2rem;
+    }
+
+    #createBtnBox button {
+        margin: 3rem 0rem 0rem 0rem;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .card {
+        padding-top: 7rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .card-front section img {
+        margin: 0rem;
+    }
+
+    .card {
+        padding-top: 6.5rem;
+    }
+
+    .card-front section aside h2 {
+        margin: 0rem 0rem 0.5rem 0rem;
+    }
+
+    .card-front section aside q {
+        margin: 1rem 4rem 0rem 4rem;
+    }
+}
+
+@media (max-width: 650px) {
+
+    #signNav h1 {
+        font-size: 2rem;
+        word-spacing: 3px;
+        letter-spacing: 3px;
+    }
+
+    #signNav img {
+        width: 9%;
+    }
+
+    .card {
+        padding-top: 5.8rem;
+    }
+
+    .card-front,
+    .card-back {
+        padding: 30px;
+    }
+
+    .card-front section aside q {
+        margin: 1rem 4rem 0.5rem 4rem;
+    }
+
+    .card-back button {
+        font-size: 1.5rem;
+    }
+
+    .card-back h2 {
+        font-size: 1.7rem;
+    }
+
+    #createBtnBox button {
+        margin: 2rem 0rem 0rem 0rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #signNav {
+        padding: 0.5rem 0.3rem;
+    }
+
+    #signNav h1 {
+        font-size: 1.9rem;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+        font-weight: 100;
+    }
+
+    #signNav img {
+        width: 9%;
+    }
+
+    .card {
+        padding-top: 4.3rem;
+    }
+
+    .card-front,
+    .card-back {
+        padding: 25px 30px;
+    }
+
+    .card-front section aside h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-back h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-front section aside,
+    .card-front section aside p,
+    .card-front section aside q,
+    .card-front section aside h3 {
+        font-size: 1rem;
+    }
+
+    .card-front section aside q {
+        margin: 1rem 4rem 0.5rem 2rem;
+    }
+
+    .card-back button {
+        font-size: 1.4rem;
+    }
+
+    #createBtnBox button {
+        margin: 2rem 0rem 0rem 0rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+
+    #signNav {
+        padding: 0.5rem 0.3rem;
+    }
+
+    #signNav h1 {
+        font-size: 1.7rem;
+    }
+
+    #signNav img {
+        width: 10%;
+    }
+
+    .card {
+        padding-top: 4rem;
+    }
+
+    .card-front,
+    .card-back {
+        padding: 25px;
+    }
+
+    .card-front section aside h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-back h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-front section aside q {
+        margin: 1rem 4rem 0.5rem 2rem;
+    }
+
+    #ceo_name {
+        font-size: small;
+    }
+
+    .card-back button {
+        font-size: 1.4rem;
+    }
+
+    #createBtnBox button {
+        margin: 2rem 0rem 0rem 0rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .card {
+        padding-top: 3.5rem;
+    }
+
+    .card-back button {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .card {
+        padding-top: 3rem;
+    }
+
+    #signNav h1 {
+        font-size: 1.2rem;
+    }
+
+    .card-back button {
+        font-size: 1.1rem;
+    }
+
+    .card-back button {
+        font-size: 1rem;
+    }
+}
