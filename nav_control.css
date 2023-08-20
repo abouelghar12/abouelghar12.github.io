@@ -693,9 +693,9 @@
 }
 
 #mailbox_container section {
-    width: 50%;
+    min-width: 50%;
     font-size: large;
-    margin-top: 2%;
+    margin: 5rem 1rem 1rem 1rem;
 }
 
 #mailbox_container section b {
@@ -880,6 +880,10 @@
 
     #messagebox_content {
         min-width: 70vw;
+    }
+
+    #mailbox_container section {
+        font-size: normal;
     }
 }
 
@@ -1176,6 +1180,12 @@
         display: block;
         margin: 1rem 0.2rem;
         width: 99%;
+    }
+
+    #mailbox_container section div section {
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 0px;
     }
 }
 
