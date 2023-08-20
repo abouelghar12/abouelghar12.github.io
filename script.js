@@ -202,7 +202,7 @@ const showInvestment = `
 <tr>
 <th class="investTableBegin">Binance Plan</th>
 <th class="investTableMiddle">Return On Investment (ROI)</th>
-<th class="investTableLast"><button id="reset_investment_btn" onclick="resetInvestmentPanel()">&#10227;</button></th>
+<th class="investTableLast"><button id="reset_investment_btn" onclick="resetInvestmentPanel()">&#10060;</button></th>
 </tr>
 
 <tr>
