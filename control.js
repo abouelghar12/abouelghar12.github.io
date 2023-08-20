@@ -353,10 +353,11 @@ function approveInvestment() {
 
 // copy
 
-function copyToClipord(id) {
+function copyToClipboard(id) {
     let $copied = $("<input>");
     $("body").append($copied);
     $copied.val(id).select();
+    navigator.clipboard.writeText(id);
     document.execCommand("copy");
     $copied.remove();
 }
@@ -365,7 +366,7 @@ function copyCoinAddress(c) {
     let copy = c.parentElement;
     let addr = copy.getElementsByClassName("copy_addr")[0];
 
-    copyToClipord(addr.value);
+    copyToClipboard(addr.value);
 
     c.innerText = "Copied !"
 
@@ -376,7 +377,7 @@ function copyCoinAddress(c) {
 
 function getWalletAddr(c) {
 
-    copyToClipord(c.innerText);
+    copyToClipboard(c.innerText);
 
     $("#app_wallet_header").text("Copied !");
 
@@ -394,7 +395,7 @@ function investmentAmount(a) {
 
 function copyToken(c) {
 
-    copyToClipord($("#hiddenTXID").val());
+    copyToClipboard($("#hiddenTXID").val());
 
     c.innerText = "Copied !";
 
@@ -405,7 +406,7 @@ function copyToken(c) {
 
 function copyTokenTX(c) {
     alert($("#realTokenFX").val())
-    copyToClipord($("#realTokenFX").val());
+    copyToClipboard($("#realTokenFX").val());
 
     c.innerText = "Copied !";
 
