@@ -45,8 +45,25 @@ const wallet_table = `
 <select onchange="setFiatCurrency(this)">
 <option value="USD">USD</option>
 <option value="EUR">EUR</option>
-<option value="KRW">KRW</option>
+<option value="AUD">AUD</option>
 <option value="JPY">JPY</option>
+<option value="CAD">CAD</option>
+<option value="GBP">GBP</option>
+<option value="BOB">BOB</option>
+<option value="PLN">PLN</option>
+<option value="THB">THB</option>
+<option value="BDT">BDT</option>
+<option value="BRL">BRL</option>
+<option value="CHF">CHF</option>
+<option value="CZK">CZK</option>
+<option value="DKK">DKK</option>
+<option value="GTQ">GTQ</option>
+<option value="ILS">ILS</option>
+<option value="KES">KES</option>
+<option value="NZD">NZD</option>
+<option value="RSD">RSD</option>
+<option value="SEK">SEK</option>
+<option value="ZAR">ZAR</option>
 </select>
 </td>
 <td id="fx_balance"></td>
