@@ -27,20 +27,54 @@ const crypto_currency = [
     {
         "id": "BTC",
         "rate": {
-            "USD": "$29,799.24",
-            "EUR": "€27,133.89",
-            "KRW": "₩39,132,019.29",
-            "JPY": "¥4,270,851.01"
+            "USD": "$26,185.04",
+            "EUR": "€24,039.31",
+            "AUD": "$41,039.86",
+            "JPY": "¥3,805,843.55",
+            "CAD": "$35,511.27",
+            "GBP": "£20,555.42",
+            "BOB": "$180,442.21",
+            "PLN": "ł107,414.37",
+            "THB": "฿921,779.59",
+            "BDT": "T2,858,727.08",
+            "BRL": "$130,167.85",
+            "CHF": "C23,099.97",
+            "CZK": "č578,570.52",
+            "DKK": "K179,499.85",
+            "GTQ": "Q205,061.45",
+            "ILS": "₪99,190.82",
+            "KES": "S3,728,810.30",
+            "NZD": "$44,235.65",
+            "RSD": "Д2,820,378.04",
+            "SEK": "k287,237.73",
+            "ZAR": "R499,379.75"
         },
         "icon": "icon/bitcoin.png"
     },
     {
         "id": "ETH",
         "rate": {
-            "USD": "$1,861.76",
-            "EUR": "€1,695.81",
-            "KRW": "₩2,445,675.67",
-            "JPY": "¥266,733.71"
+            "USD": "$1,681.29",
+            "EUR": "€1,543.94",
+            "AUD": "$2,636.42",
+            "JPY": "¥244,438.25",
+            "CAD": "$2,280.99",
+            "GBP": "£1,319.55",
+            "BOB": "$11,579.77",
+            "PLN": "ł6,891.68",
+            "THB": "฿59,139.02",
+            "BDT": "T183,411.60",
+            "BRL": "$8,352.14",
+            "CHF": "C1,481.98",
+            "CZK": "č37,119.18",
+            "DKK": "K11,515.12",
+            "GTQ": "Q13,154.82",
+            "ILS": "₪6,362.17",
+            "KES": "S239,167.14",
+            "NZD": "$2,837.12",
+            "RSD": "Д180,877.45",
+            "SEK": "k18,421.15",
+            "ZAR": "R32,024.19"
         },
         "icon": "icon/ethereum.png"
     },
@@ -48,29 +82,80 @@ const crypto_currency = [
         "id": "USDT",
         "rate": {
             "USD": "$1.00",
-            "EUR": "€0.91",
-            "KRW": "₩1,313.34",
-            "JPY": "¥143.26"
+            "EUR": "€0.92",
+            "AUD": "$1.57",
+            "JPY": "¥145.68",
+            "CAD": "$1.36",
+            "GBP": "£0.79",
+            "BOB": "$6.90",
+            "PLN": "ł4.11",
+            "THB": "฿35.26",
+            "BDT": "T109.37",
+            "BRL": "$4.98",
+            "CHF": "C0.88",
+            "CZK": "č22.13",
+            "DKK": "K6.87",
+            "GTQ": "Q7.84",
+            "ILS": "₪3.79",
+            "KES": "S142.61",
+            "NZD": "$1.69",
+            "RSD": "Д107.86",
+            "SEK": "k10.98",
+            "ZAR": "R19.10"
         },
         "icon": "icon/tether.png"
     },
     {
         "id": "BNB",
         "rate": {
-            "USD": "$243.88",
-            "EUR": "€222.14",
-            "KRW": "₩320,433.60",
-            "JPY": "¥34,956.60"
+            "USD": "$217.34",
+            "EUR": "€199.59",
+            "AUD": "$340.83",
+            "JPY": "¥31,605.95",
+            "CAD": "$294.83",
+            "GBP": "£170.64",
+            "BOB": "$1,498.03",
+            "PLN": "ł891.65",
+            "THB": "฿7,651.54",
+            "BDT": "T7,651.54",
+            "BRL": "$1,080.55",
+            "CHF": "C191.82",
+            "CZK": "č4,804.39",
+            "DKK": "K1,490.46",
+            "GTQ": "Q1,702.66",
+            "ILS": "₪823.51",
+            "KES": "S30,958.18",
+            "NZD": "$367.22",
+            "RSD": "Д23,413.24",
+            "SEK": "k2,384.70",
+            "ZAR": "R4,145.99"
         },
         "icon": "icon/bnb.png"
     },
     {
         "id": "DOGE",
         "rate": {
-            "USD": "$0.07",
-            "EUR": "€0.07",
-            "KRW": "₩99.31",
-            "JPY": "¥10.79"
+            "USD": "$0.06",
+            "EUR": "€0.06",
+            "AUD": "$0.10",
+            "JPY": "¥9.30",
+            "CAD": "$0.09",
+            "GBP": "£0.05",
+            "BOB": "$0.44",
+            "PLN": "ł0.26",
+            "THB": "฿2.25",
+            "BDT": "T6.99",
+            "BRL": "$0.32",
+            "CHF": "C0.06",
+            "CZK": "č1.41",
+            "DKK": "K0.44",
+            "GTQ": "Q0.50",
+            "ILS": "₪0.24",
+            "KES": "S9.12",
+            "NZD": "$0.11",
+            "RSD": "Д6.89",
+            "SEK": "k0.70",
+            "ZAR": "R1.22"
         },
         "icon": "icon/doge.png"
     }
@@ -83,7 +168,7 @@ if (localStorage.hasOwnProperty("planz")) {
     let deposit = JSON.parse(localStorage.getItem("planz"));
     if (localStorage.hasOwnProperty("cash")) {
         initialDeposit = `${deposit.amount}(${deposit.currency})`;
-    }  
+    }
 }
 
 let walletBalance = 0;
@@ -181,7 +266,7 @@ function updateCash() {
         const months = Math.floor(timeSpent / month);
         const days = Math.floor(timeSpent / day);
 
-       if (timeSpent <= -day) {
+        if (timeSpent <= -day) {
             payOutStatus = "Re-Invest";
             cashInTimer = `<b style="color:red">${payOutStatus}</b> remaining`;
         }
