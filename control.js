@@ -433,10 +433,10 @@ function widthdrawBtn(b) {
     else if (b.innerText == "Dormant") {
         processWidthdrawal = `
         <section id="withdrawalContainer">
-
         <div id="status_widthdrawal">Sorry, you do not have any <b>Investment Plan</b> to enable bonus withdrawal.</div>
+        `;
         
-        `
+        $("#investment_status_update").html("");
     }
     else if (b.innerText == "Widthdraw") {
 
