@@ -87,7 +87,7 @@ else {
     nitialDeposit = 0;
 }
 
-let walletBalance = 100;
+let walletBalance = 0;
 
 let promo_balance;
 let userBalance;
