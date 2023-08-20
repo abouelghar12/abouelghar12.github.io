@@ -77,18 +77,13 @@ const crypto_currency = [
 ];
 
 const promoBonus = 1000;
-let initialDeposit;
+let initialDeposit = `$0`;
 
 if (localStorage.hasOwnProperty("planz")) {
     let deposit = JSON.parse(localStorage.getItem("planz"));
     if (localStorage.hasOwnProperty("cash")) {
         initialDeposit = `${deposit.amount}(${deposit.currency})`;
-    } else {
-        initialDeposit = 0;
     }  
-}
-else {
-    nitialDeposit = 0;
 }
 
 let walletBalance = 0;
