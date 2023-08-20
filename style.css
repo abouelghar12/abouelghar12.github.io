@@ -1,5 +1,5 @@
 #bnbNav {
-    background-image: url(https://abouelghar12.github.io/pic/nav_bg.jpg);
+    background-image: url(pic/nav_bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,6 +152,10 @@
     gap: 1rem;
 }
 
+#wallet_table table {
+    color: white;
+}
+
 #wallet_table select {
     background: transparent;
     color: gray;
@@ -230,7 +234,7 @@
 }
 
 #bnbMain {
-    background-image: url(https://abouelghar12.github.io/pic/bg1.jpg);
+    background-image: url(pic/bg1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
