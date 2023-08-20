@@ -1171,6 +1171,12 @@
     #wallet_header img {
         height: 60px;
     }
+
+    #confirm_sent_token {
+        display: block;
+        margin: 1rem 0.2rem;
+        width: 99%;
+    }
 }
 
 @media (max-width: 400px) {
