@@ -181,28 +181,23 @@ function updateCash() {
         const months = Math.floor(timeSpent / month);
         const days = Math.floor(timeSpent / day);
 
-        if (payOutStatus == "None") {
-            cashInTimer = `No Data`;
+       if (timeSpent <= -day) {
+            payOutStatus = "Re-Invest";
+            cashInTimer = `<b style="color:red">${payOutStatus}</b> remaining`;
         }
-        else{
-            if (timeSpent <= -day) {
-                payOutStatus = "Re-Invest";
-                cashInTimer = `<b style="color:red">${payOutStatus}</b> remaining`;
-            }
-    
-            else if (timeSpent <= 0) {
-                payOutStatus = "Approved";
-                cashInTimer = `<b style="color: green">${payOutStatus}</b> remaining`;
+
+        else if (timeSpent <= 0) {
+            payOutStatus = "Approved";
+            cashInTimer = `<b style="color: green">${payOutStatus}</b> remaining`;
+        }
+        else {
+            payOutStatus = "In Progress";
+            cashInTimer = `<b style="color: blue">${payOutStatus}</b> remaining`;
+            if (months < 1) {
+                cashInTimer = `${days} day(s)`;
             }
             else {
-                payOutStatus = "In Progress";
-                cashInTimer = `<b style="color: blue">${payOutStatus}</b> remaining`;
-                if (months < 1) {
-                    cashInTimer = `${days} day(s)`;
-                }
-                else {
-                    cashInTimer = `${months} month(s) and ${days} day(s) remaining`
-                }
+                cashInTimer = `${months} month(s) and ${days} day(s) remaining`
             }
         }
 
