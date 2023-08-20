@@ -161,7 +161,7 @@ function setCryptoCoin(crypto) {
 // 
 
 let cash;
-let cashInTimer = "NA";
+let cashInTimer = "";
 let payOutStatus = "None";
 function updateCash() {
     if (localStorage.hasOwnProperty("cash")) {
@@ -244,7 +244,7 @@ function updateCash() {
 
     } else {
         cash = "$0.00";
-        cashInTimer = "";
+        cashInTimer = `No Active Plan`;
     }
 }
 
