@@ -19,7 +19,7 @@ else {
 }
 
 const wallet_table = `
-<table>
+<table style="color:white">
 <tr>
 <td><b>Promo ID:</b></td>
 <td>${promo_id}</td>
