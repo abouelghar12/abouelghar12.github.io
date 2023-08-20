@@ -351,12 +351,27 @@ function approveInvestment() {
     $("#bnbMainContainer").html(showInvestment)
 };
 
-// 
+// copy
+
+function copyToClipord(copied) {
+    // copied.select();// select the input field
+    // copied.setSelectionRange(0, 99999);// For mobile devices
+    navigator.clipboard.writeText(copied).then(() => {
+        console.log('Content copied to clipboard');
+        /* Resolved - text copied to clipboard successfully */
+    }, () => {
+        console.error('Failed to copy');
+        /* Rejected - text failed to copy to the clipboard */
+    });
+
+}
+
 function copyCoinAddress(c) {
     let copy = c.parentElement;
     let addr = copy.getElementsByClassName("copy_addr")[0];
 
-    navigator.clipboard.writeText(addr.value);
+    copyToClipord(addr.value);
+
     c.innerText = "Copied !"
 
     setTimeout(() => {
@@ -366,7 +381,9 @@ function copyCoinAddress(c) {
 
 // 
 function getWalletAddr(c) {
-    navigator.clipboard.writeText(c.innerText);
+
+    copyToClipord(c.innerText);
+
     $("#app_wallet_header").text("Copied !");
 
     setTimeout(() => {
@@ -384,9 +401,8 @@ function investmentAmount(a) {
 
 // 
 function copyToken(c) {
-    const t = c.parentElement;
-    const tk = t.getElementsByClassName("hidden_token")[0];
-    navigator.clipboard.writeText(tk.value);
+
+    copyToClipord($("#hiddenTXID").val());
 
     c.innerText = "Copied !";
 
@@ -396,7 +412,8 @@ function copyToken(c) {
 };
 
 function copyTokenTX(c) {
-    navigator.clipboard.writeText($("#realTokenFX").val());
+    alert($("#realTokenFX").val())
+    copyToClipord($("#realTokenFX").val());
 
     c.innerText = "Copied !";
 
@@ -435,8 +452,6 @@ function widthdrawBtn(b) {
         <section id="withdrawalContainer">
         <div id="status_widthdrawal">Sorry, you do not have any <b>Investment Plan</b> to enable bonus withdrawal.</div>
         `;
-        
-        $("#investment_status_update").html("");
     }
     else if (b.innerText == "Widthdraw") {
 
@@ -703,7 +718,7 @@ function openMailbox() {
         
         <section>
         <B>NB: </b>
-        Contact our Customer Care hotline via <a href="https://abouelghar12.github.io/icon/${whatsapp}"><img src="https://abouelghar12.github.io/icon/whatsapp.svg"/> WhatsApp</a> for urgent attention.
+        Contact our Customer Care hotline via <a href="${whatsapp}"><img src="https://abouelghar12.github.io/icon/whatsapp.svg"/> WhatsApp</a> for urgent attention.
         </section>
         
         </div>
