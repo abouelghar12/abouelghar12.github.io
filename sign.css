@@ -22,7 +22,7 @@ a {
 }
 
 #bnbLoading {
-    background-image: url(pic/loader.png);
+    background-image: url(https://abouelghar12.github.io/pic/loader.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -61,7 +61,7 @@ a {
 
 #signUpPage {
     /* overflow: hidden; */
-    background-image: url(pic/promo.png);
+    background-image: url(https://abouelghar12.github.io/pic/promo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -136,7 +136,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-        url(pic/sign_up.jpg);
+        url(https://abouelghar12.github.io/pic/sign_up.jpg);
     padding: 55px;
     box-sizing: border-box;
     backface-visibility: hidden;
