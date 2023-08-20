@@ -92,33 +92,33 @@ const mainPageShow = `
 
    <div id="post_center">
    <p onclick="approveInvestment()">
-   <img src="https://abouelghar12.github.io/icon/bitcoin.png">
+   <img src="icon/bitcoin.png">
    <span>Bitcoin</span>
    </p>
 
    <p onclick="approveInvestment()">
-   <img src="https://abouelghar12.github.io/icon/bnb.png">
+   <img src="icon/bnb.png">
    <span>Binance</span>
    </p>
 
    <p onclick="approveInvestment()">
-   <img src="https://abouelghar12.github.io/icon/ethereum.png">
+   <img src="icon/ethereum.png">
    <span>Ethereum</span>
    </p>
 
    <p onclick="approveInvestment()">
-   <img src="https://abouelghar12.github.io/icon/tether.png">
+   <img src="icon/tether.png">
    <span>Tether</span>
    </p>
 
    <p onclick="approveInvestment()">
-   <img src="https://abouelghar12.github.io/icon/doge.png">
+   <img src="icon/doge.png">
    <span>Dogecoin</span>
    </p>
    </div>
 
    <div id="promo_write_up">
-   <img src="https://abouelghar12.github.io/pic/promo.png">
+   <img src="pic/promo.png">
    <section>
    ${randomAds}
    </section>
@@ -174,6 +174,8 @@ const showPortfolio = `
 
 `;
 
+const tableBtn = `<td class="investTableLast"><button class="flex_plan_btn" onclick="getAppPlan(this)">Select</button></td>`;
+
 const showInvestment = `
 <section id="investmentContainer">
 
@@ -189,25 +191,25 @@ const showInvestment = `
 <tr>
 <td class="investTableBegin"><b class="flex_plan">Bi-Flex</b></td>
 <td class="investTableMiddle"><span class="flex_choose_plan">Return over 50% on Investment in 14 Days</span></td>
-<td class="investTableLast"><button class="flex_plan_btn" onclick="getAppPlan(this)">Select</button></td>
+${tableBtn}
 </tr>
 
 <tr>
 <td class="investTableBegin"><b class="flex_plan">Bi-Flex Mini</b></td>
 <td class="investTableMiddle"><span class="flex_choose_plan">Return over 75% on Investment in 30 Days</span></td>
-<td class="investTableLast"><button class="flex_plan_btn" onclick="getAppPlan(this)">Select</button></td>
+${tableBtn}
 </tr>
 
 <tr>
 <td class="investTableBegin"><b class="flex_plan">Bi-Flex Max</b></td>
 <td class="investTableMiddle"><span class="flex_choose_plan">Return over 100% on Investment in 45 Days</span></td>
-<td class="investTableLast"><button class="flex_plan_btn" onclick="getAppPlan(this)">Select</button></td>
+${tableBtn}
 </tr>
 
 <tr>
 <td class="investTableBegin"><b class="flex_plan">Bi-Flex Pro</b></td>
 <td class="investTableMiddle"><span class="flex_choose_plan">Return over 200% on Investment 60 Days</span></td>
-<td class="investTableLast"><button class="flex_plan_btn" onclick="getAppPlan(this)">Select</button></td>
+${tableBtn}
 </tr>
 
 </table>
@@ -222,7 +224,7 @@ const showSettings = `
 <div id="app_settings">
 
 <section id="app_settings1">
-<img src="https://abouelghar12.github.io/pic/settings_bg.png" />
+<img src="pic/settings_bg.png" />
 </section>
 
 <section id="app_settings2">
@@ -246,12 +248,12 @@ const showSettings = `
 <span>
 
 <span class="app_wallet_icons">
-<img src="https://abouelghar12.github.io/icon/bnb.png">
+<img src="icon/bnb.png">
 <span class="app_wallet_addr" onclick="getWalletAddr(this)">${bnb_wallet}</span>
 </span>
 
 <span> 
-<img id="app_wallet_barcode" src="https://abouelghar12.github.io/barcode/bnb.jpg" />
+<img id="app_wallet_barcode" src="barcode/bnb.jpg" />
 </span>
 
 <span class="app_wallet_btn">
@@ -299,8 +301,8 @@ const showMessage = `
 $("#bnbMain").html(
    `
    <div id="chatContainer">
-   <img onclick="whatsApp()" src="https://abouelghar12.github.io/icon/Whatsapp.svg" /> 
-   <img onclick="msgApp()" src="https://abouelghar12.github.io/icon/mailbox.webp" />
+   <img onclick="whatsApp()" src="icon/Whatsapp.svg" /> 
+   <img onclick="msgApp()" src="icon/mailbox.webp" />
    </div>
 
    <div id="bnbMainContainer">
