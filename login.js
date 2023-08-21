@@ -1,7 +1,7 @@
 localStorage.clear();
 
 $("#logNav").html(`
-<img src="icon/logo3.png" alt="logo">
+<img src="https://abouelghar12.github.io/icon/logo3.png" alt="logo">
 <p><span>&#128274;</span> URL verification: <i>&#10003;</i></p>
 `);
 
@@ -19,7 +19,7 @@ const tokeSpin = `
 <section id="signInContainer">
 <div id="spinTokenContainer">
 
-<img id="spinImg" src="pic/settings_bg.png" />
+<img id="spinImg" src="https://abouelghar12.github.io/pic/settings_bg.png" />
 
 <section>
 <h1 id="spinHeader">Token Rewards</h1>
@@ -60,7 +60,7 @@ function getTokenrewards() {
             }
             else if (c >= target) {
 
-                $("#spinImg").attr("src", "pic/cr7.png");
+                $("#spinImg").attr("src", "https://abouelghar12.github.io/pic/cr7.png");
                 $("#spinTokenContainer").show().css({ "display": "flex", "justify-content": "center", "gap": "0rem" });
                 $("#spinTokenContainer section").css({ "top": "0" });
                 $("#spinTokenContainer img").css({ "height": "40vh", "width": "100%", "opacity": "1", });
