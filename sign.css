@@ -562,4 +562,8 @@ a {
     .card-back button {
         font-size: 1rem;
     }
+
+    #bnbLoading img {
+        width: 100px;
+    }
 }
