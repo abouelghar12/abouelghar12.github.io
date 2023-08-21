@@ -250,7 +250,7 @@ const showSettings = `
 <p id="app_details">
 <span><b>Username:</b> ${user_name_id}</span>
 <span><b>Email: </b> ${user_email_id}</span>
-<span><b>Refereal: </b> <span onclick="getWalletAddr(this)">${user_refereal_id}</span></span>
+<span><b>Refereal: </b> <span style="cursor:pointer" onclick="getWalletAddr(this)">${user_refereal_id}</span></span>
 </p>
 </div>
 
