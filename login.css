@@ -1,0 +1,437 @@
+#signInPage {
+    color: white;
+    background: #28282B;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#signBtnOptions {
+    text-align: center;
+    margin-top: 2rem;
+    color: #FFC000;
+    font-size: 0.9rem;
+}
+
+#signBtnOptions i {
+    font-size: larger;
+    padding: 0rem 0.5rem;
+    color: white;
+}
+
+#logNav img {
+    cursor: none;
+    width: 10vw;
+    object-fit: contain;
+    margin: 1.5rem 1rem 0.5rem 1rem;
+}
+
+#logNav p {
+    text-align: center;
+    background-color: rgba(255, 165, 0, 0.2);
+    padding: 0.5rem 0.2rem;
+    font-size: 1rem;
+}
+
+#logNav p span {
+    font-size: larger;
+}
+
+#logNav p span,
+#logNav p i {
+    color: #00FF7F;
+}
+
+#logBody {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signInContainer {
+    min-width: 30%;
+    position: relative;
+    margin-top: 1rem;
+}
+
+#signInContainer h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin: 2rem 0rem;
+}
+
+
+#signInContainer h2 {
+    font-size: 1.5rem;
+    color: silver;
+    position: absolute;
+    left: -20%;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#signInContainer p {
+    margin-bottom: 1rem;
+    font-size: larger;
+}
+
+#signInContainer span {
+    margin-bottom: 1rem;
+}
+
+#signInContainer input,
+#signInContainer button {
+    width: 100%;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    border-radius: 5px;
+    outline: none;
+}
+
+#signInContainer button {
+    font-size: 1.2rem;
+    background-color: rgba(255, 192, 0, 0.8);
+    font-weight: bold;
+    color: #28282B;
+}
+
+#signInContainer button:hover {
+    background-color: rgba(255, 192, 0, 1);
+}
+
+#signInContainer input {
+    border: 1px solid gray;
+    color: white;
+    font-size: 1.1rem;
+}
+
+#signInContainer input:focus,
+#signInContainer input:hover {
+    border-color: #FFC000;
+}
+
+#signUpContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#signUpContainer a {
+    font-size: larger;
+    color: whitesmoke;
+}
+
+#signUpContainer a:hover {
+    color: #FFC000;
+}
+
+#checkboxContainer input {
+    width: auto;
+}
+
+#checkboxContainer {
+    display: flex;
+    align-items: center;
+}
+
+#spinWheel {
+    display: none;
+    font-size: 100px !important;
+    transition: 0.2s ease;
+    animation: spinWheel 1s infinite;
+}
+
+#spinTokenContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+    /* position: relative; */
+}
+
+#spinTokenContainer img {
+    height: 80vh;
+    object-fit: contain;
+    transition: 0.5s ease-in-out;
+    animation: loadSlowImg 2s ease-in-out;
+}
+
+#spinTokenContainer section {
+    min-width: 30%;
+    text-align: center;
+}
+
+#logFooter {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5rem 0.2rem;
+    color: silver;
+    font-size: small;
+    text-align: center;
+    background: rgba(40, 40, 43, 0.9);
+    z-index: 5;
+}
+
+/*  */
+
+@media (max-width: 1030px) {
+    #logNav img {
+        width: 15vw;
+    }
+
+    #signInContainer {
+        width: 50%;
+    }
+
+    #signInContainer h2 {
+        left: -18%;
+        top: -2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    #logNav img {
+        width: 17vw;
+    }
+
+    #signInContainer {
+        width: 60%;
+    }
+
+    #signInContainer h2 {
+        left: -15%;
+    }
+}
+
+@media (max-width: 800px) {
+    #logNav img {
+        width: 18vw;
+    }
+
+    #signInContainer {
+        width: 70%;
+    }
+
+    #signInContainer h2 {
+        left: -10%;
+    }
+}
+
+@media (max-width: 650px) {
+    #logNav img {
+        width: 20vw;
+    }
+
+    #signInContainer {
+        width: 80%;
+    }
+
+    #signInContainer h2 {
+        left: -5%;
+        top: -1.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #logNav img {
+        width: 25vw;
+    }
+
+    #logNav p {
+        padding: 0.3rem 0.2rem;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    #signInContainer {
+        width: 80%;
+    }
+
+    #signInContainer h1 {
+        font-size: 1.5rem;
+    }
+
+    #signInContainer h2 {
+        left: -5%;
+        top: -1rem;
+        font-size: 1.2rem;
+    }
+
+    #signInContainer p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #signInPage {
+        overflow: auto;
+    }
+
+    #signInContainer {
+        width: 85%;
+    }
+
+    #signInContainer h2 {
+        left: -2%;
+        top: -1rem;
+        font-size: 1.1rem;
+    }
+
+    #signInContainer input,
+    #signInContainer button {
+        padding: 0.5rem;
+    }
+
+    .box_down {
+        font-size: small;
+        margin-bottom: 2rem;
+    }
+}
+
+/*  */
+
+@keyframes spinWheel {
+    from {
+        transform: rotate(-360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes loadSlowImg {
+    from {
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*  */
+
+@media (max-width: 1030px) {
+    #spinTokenContainer {
+        justify-content: center;
+        position: relative;
+        min-height: 90vh;
+    }
+
+    #spinTokenContainer img {
+        height: auto !important;
+        opacity: 0.2;
+        z-index: 0;
+    }
+
+    #spinTokenContainer section h1 {
+        font-size: 3rem;
+    }
+
+    #spinTokenContainer section button {
+        font-size: 2rem;
+    }
+
+    #spinTokenContainer section {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        top: 20rem;
+        min-width: 100%;
+        z-index: 1;
+        border-radius: 5px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 650px) {
+
+    #spinTokenContainer img {
+        height: 80vh !important;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #spinTokenContainer section h1 {
+        font-size: 2.5rem;
+    }
+
+    #spinTokenContainer section {
+        gap: 1rem;
+        top: 10rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 400px) {
+
+    #spinTokenContainer section h1 {
+        font-size: 2rem;
+    }
+
+    #spinTokenContainer section {
+        top: 8rem;
+        font-size: 1rem;
+    }
+
+    #spinTokenContainer section button {
+        padding: 0.2rem 0.1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 330px) {
+
+    #spinTokenContainer section h1 {
+        font-size: 1.8rem;
+    }
+
+    #spinTokenContainer section {
+        top: 0rem;
+        gap: 0.1rem;
+        font-size: 0.8rem;
+    }
+
+    #spinTokenContainer section button {
+        padding: 0.2rem 0.1rem;
+        font-size: 1.1rem;
+    }
+
+    #spinWheel {
+        font-size: 50px !important;
+    }
+
+    #signBtnOptions {
+        margin-top: 0.5rem;
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 300px) {
+
+    #spinTokenContainer section h1 {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+
+    #spinTokenContainer section {
+        font-size: 0.7rem;
+    }
+
+    #spinTokenContainer section button {
+        font-size: 1rem;
+    }
+
+    #signBtnOptions {
+        font-size: 0.5rem;
+    }
+}
