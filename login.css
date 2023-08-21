@@ -179,6 +179,28 @@
 
 /*  */
 
+@keyframes spinWheel {
+    from {
+        transform: rotate(-360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes loadSlowImg {
+    from {
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*  */
+
 @media (max-width: 1030px) {
     #logNav img {
         width: 15vw;
@@ -191,6 +213,38 @@
     #signInContainer h2 {
         left: -18%;
         top: -2rem;
+    }
+
+    #spinTokenContainer {
+        justify-content: center;
+        position: relative;
+        min-height: 90vh;
+    }
+
+    #spinTokenContainer img {
+        height: auto !important;
+        opacity: 0.2;
+        z-index: 0;
+    }
+
+    #spinTokenContainer section h1 {
+        font-size: 3rem;
+    }
+
+    #spinTokenContainer section button {
+        font-size: 2rem;
+    }
+
+    #spinTokenContainer section {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        top: 20rem;
+        min-width: 100%;
+        z-index: 1;
+        border-radius: 5px;
+        font-size: 1.5rem;
     }
 }
 
@@ -236,11 +290,17 @@
         top: -1.5rem;
         font-size: 1.2rem;
     }
+
+    #spinTokenContainer img {
+        height: 80vh !important;
+    }
 }
 
 @media (max-width: 500px) {
+
     #logNav img {
         width: 25vw;
+        margin: 1rem 0.5rem;
     }
 
     #logNav p {
@@ -266,9 +326,25 @@
     #signInContainer p {
         font-size: 1rem;
     }
+
+    #spinTokenContainer section h1 {
+        font-size: 2.5rem;
+    }
+
+    #spinTokenContainer section {
+        gap: 1rem;
+        top: 10rem;
+        font-size: 1.3rem;
+    }
+
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
+    #logNav img {
+        width: 30vw;
+        margin: 1rem 0.5rem;
+    }
+
     #signInPage {
         overflow: auto;
     }
@@ -292,87 +368,6 @@
         font-size: small;
         margin-bottom: 2rem;
     }
-}
-
-/*  */
-
-@keyframes spinWheel {
-    from {
-        transform: rotate(-360deg);
-    }
-
-    to {
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes loadSlowImg {
-    from {
-        opacity: 0.2;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-/*  */
-
-@media (max-width: 1030px) {
-    #spinTokenContainer {
-        justify-content: center;
-        position: relative;
-        min-height: 90vh;
-    }
-
-    #spinTokenContainer img {
-        height: auto !important;
-        opacity: 0.2;
-        z-index: 0;
-    }
-
-    #spinTokenContainer section h1 {
-        font-size: 3rem;
-    }
-
-    #spinTokenContainer section button {
-        font-size: 2rem;
-    }
-
-    #spinTokenContainer section {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        top: 20rem;
-        min-width: 100%;
-        z-index: 1;
-        border-radius: 5px;
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 650px) {
-
-    #spinTokenContainer img {
-        height: 80vh !important;
-    }
-}
-
-@media (max-width: 500px) {
-
-    #spinTokenContainer section h1 {
-        font-size: 2.5rem;
-    }
-
-    #spinTokenContainer section {
-        gap: 1rem;
-        top: 10rem;
-        font-size: 1.3rem;
-    }
-}
-
-@media (max-width: 400px) {
 
     #spinTokenContainer section h1 {
         font-size: 2rem;
@@ -390,6 +385,11 @@
 }
 
 @media (max-width: 330px) {
+
+    #logNav img {
+        width: 35vw;
+        margin: 0.5rem;
+    }
 
     #spinTokenContainer section h1 {
         font-size: 1.8rem;
