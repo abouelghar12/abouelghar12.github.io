@@ -10,6 +10,7 @@ function signOutUser(e) {
     }, 2000);
 }
 
+$("#signin_panel").hide();
 $("#login_panel").hide();
 $("#user_panel").hide();
 $("#bnbLoading").show();
@@ -21,7 +22,7 @@ if (localStorage.hasOwnProperty("userName")) {
 }
 else {
     setTimeout(() => {
-        $("#login_panel").show();
+        $("#signin_panel").show();
         $("#bnbLoading").hide();
     }, 2000);
 }
