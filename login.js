@@ -1,5 +1,3 @@
-localStorage.clear();
-
 $("#logNav").html(`
 <img src="https://abouelghar12.github.io/icon/logo3.png" alt="logo">
 <p><span>&#128274;</span> URL verification: <i>&#10003;</i></p>
