@@ -161,7 +161,13 @@ const crypto_currency = [
     }
 ];
 
-const promoBonus = 1000;
+let promoBonus = 1000;
+
+if (localStorage.hasOwnProperty("appToken")) {
+    let assignToken = JSON.parse(localStorage.getItem("appToken"));
+    promoBonus = assignToken.reward
+}
+
 let initialDeposit = `$0`;
 
 if (localStorage.hasOwnProperty("planz")) {
