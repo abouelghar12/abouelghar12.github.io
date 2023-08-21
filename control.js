@@ -380,11 +380,7 @@ function getWalletAddr(c) {
 
     copyToClipboard(c.innerText);
 
-    $("#app_wallet_header").text("Copied !");
-
-    setTimeout(() => {
-        $("#app_wallet_header").text("Wallet Addresses");
-    }, 2000);
+    alert("Copied !");
 }
 
 function investmentAmount(a) {
