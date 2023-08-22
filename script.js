@@ -318,7 +318,7 @@ const showMessage = `
 $("#bnbMain").html(
    `
    <div id="chatContainer">
-   <img onclick="whatsApp()" src="https://abouelghar12.github.io/icon/Whatsapp.svg" /> 
+   <img onclick="whatsApp()" src="https://abouelghar12.github.io/icon/whatsapp.svg" /> 
    <img onclick="msgApp()" src="https://abouelghar12.github.io/icon/mailbox.webp" />
    </div>
 
