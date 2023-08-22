@@ -22,8 +22,12 @@ if (localStorage.hasOwnProperty("userName")) {
 }
 else {
     setTimeout(() => {
-        $("#signin_panel").show();
         $("#bnbLoading").hide();
+        if (localStorage.hasOwnProperty("reg_user")) {
+            $("#login_panel").show();
+        } else {
+            $("#signin_panel").show();
+        }
     }, 2000);
 }
 
