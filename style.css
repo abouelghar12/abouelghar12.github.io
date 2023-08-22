@@ -57,7 +57,7 @@
 
 #appMsg {
     display: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 0rem 1rem;
     cursor: pointer;
 }
@@ -456,6 +456,10 @@
     #bnbNavBar ul li img {
         width: 20%;
     }
+
+    #appMsg {
+    font-size: 1.2rem;
+}
 
     #logout_container button {
         font-size: 0.8rem;
