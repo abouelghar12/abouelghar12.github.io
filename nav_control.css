@@ -143,10 +143,6 @@
     color: black;
 }
 
-#investmentContainer {
-    overflow: auto;
-}
-
 #investmentContainer th,
 #investmentContainer td {
     margin: 1rem 0rem;
@@ -1085,6 +1081,10 @@
         text-align: center;
         min-width: 70px;
         padding: 0.1rem 0.2rem;
+    }
+
+    #investmentContainer {
+    overflow: auto;
     }
 }
 
