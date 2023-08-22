@@ -14,6 +14,31 @@
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+#wallet_menu,
+#bnbMain,
+#wallet_table table,
+#bnbMainContainer section,
+#investmentContainer,
+.enter_selected_amount,
+#bnbNavBar ul,
+#menuListing,
+#menuHeadline {
+    transition: 2s ease;
+    animation: general 0.5s ease-in-out;
+}
+
+@keyframes general {
+    from {
+        opacity: 0.1;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(1);
+    }
+}
+
 #bnbNavBar {
     height: auto;
     width: 100%;
@@ -250,12 +275,13 @@
 
 #bnbMainContainer {
     width: 100%;
-    min-height: 70vh;
+    min-height: 30vh;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
 #post_write_up {
     display: none;
+    padding-bottom: 1rem;
 }
 
 #post_write_up h2 {
@@ -333,7 +359,7 @@
     align-items: center;
     justify-content: right;
     gap: 2rem;
-    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
     background-color: rgba(110, 1, 1, 0.8);
     margin: 1rem 0rem;
     position: relative;
@@ -343,7 +369,7 @@
     color: white;
     position: absolute;
     left: 0.5rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     cursor: pointer;
 }
@@ -429,7 +455,7 @@
     }
 
     #bnbMainContainer {
-        min-height: 84vh;
+        min-height: 40vh;
     }
 
     #menuListing {
@@ -529,9 +555,13 @@
     }
 
     #post_center {
-        gap: 1.5rem;
+        gap: 2rem;
         padding: 0.2rem 0.1rem;
-        font-size: small;
+        padding-right: 1rem;
+    }
+
+    #post_center span {
+        display: none;
     }
 
     #post_center p img {
@@ -613,16 +643,8 @@
         font-size: smaller;
     }
 
-    #post_center {
-        gap: 2rem;
-    }
-
     #post_center p img {
         width: 30px;
-    }
-
-    #post_center p span {
-        display: none;
     }
 
     #promo_write_up {
@@ -710,10 +732,6 @@
         width: 25px;
     }
 
-    #post_center p span {
-        display: none;
-    }
-
     #promo_write_up {
         flex-wrap: wrap;
         font-size: 0.7rem;
@@ -790,18 +808,6 @@
     #post_write_up section ol {
         margin: 1rem 0.2rem;
         font-size: 0.8rem;
-    }
-
-    #post_center {
-        gap: 1.5rem;
-    }
-
-    #post_center p img {
-        width: 25px;
-    }
-
-    #post_center p span {
-        display: none;
     }
 
     #promo_write_up {
