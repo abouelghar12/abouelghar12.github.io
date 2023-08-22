@@ -1,8 +1,8 @@
-localStorage.clear();
+// localStorage.clear();
 
 $("#logNav").html(`
 <img src="https://abouelghar12.github.io/icon/logo3.png" alt="logo">
-<p><span><img src="icon/padlock.svg" alt="secured"/></span> URL verification: <i>&#10003;</i></p>
+<p><span><img src="https://abouelghar12.github.io/icon/padlock.svg" alt="secured"/></span> URL verification: <i>&#10003;</i></p>
 `);
 
 $("#logFooter").html(`&copy; 2017 - ${d.getFullYear()} Binance`);
