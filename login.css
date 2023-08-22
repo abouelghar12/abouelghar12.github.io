@@ -27,17 +27,23 @@
 }
 
 #logNav p {
-    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
     background-color: rgba(255, 165, 0, 0.2);
     padding: 0.5rem 0.2rem;
     font-size: 1rem;
 }
 
-#logNav p span {
-    font-size: larger;
+#logNav p span img {
+    width: auto;
+    height: 4vh;
+    margin: 0rem;
+    padding: 0rem;
 }
 
-#logNav p span,
 #logNav p i {
     color: #00FF7F;
 }
