@@ -1,5 +1,5 @@
 #bnbNav {
-    background-image: url(pic/nav_bg.jpg);
+    background-image: url(https://abouelghar12.github.io/pic/nav_bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -240,7 +240,7 @@
 }
 
 #bnbMain {
-    background-image: url(pic/bg1.jpg);
+    background-image: url(https://abouelghar12.github.io/pic/bg1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -252,6 +252,10 @@
     width: 100%;
     min-height: 70vh;
     background-color: rgba(255, 255, 255, 0.9);
+}
+
+#post_write_up {
+    display: none;
 }
 
 #post_write_up h2 {
@@ -306,14 +310,46 @@
     font-size: 0.9rem;
 }
 
+#post_write_up,
+#promo_write_up {
+    transition: 2s;
+    animation: slowShow 1s ease;
+}
+
+@keyframes slowShow {
+    from {
+        opacity: 0.3;
+        scale: 0.6;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
 #post_center {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     gap: 2rem;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
     background-color: rgba(110, 1, 1, 0.8);
     margin: 1rem 0rem;
+    position: relative;
+}
+
+#post_center b {
+    color: white;
+    position: absolute;
+    left: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#post_center b:hover {
+    color: goldenrod;
 }
 
 #post_center p {
@@ -457,13 +493,13 @@
         width: 20%;
     }
 
-    #appMsg {
-    font-size: 1.2rem;
-}
-
     #logout_container button {
         font-size: 0.8rem;
         margin: 0rem 0.2rem;
+    }
+
+    #appMsg {
+        font-size: 1.2rem;
     }
 
     #wallet_menu aside h1 {
