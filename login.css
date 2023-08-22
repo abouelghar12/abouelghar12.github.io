@@ -212,6 +212,10 @@
         width: 15vw;
     }
 
+    #logNav p span img {
+        height: 2vh;
+    }
+
     #signInContainer {
         width: 50%;
     }
@@ -397,6 +401,10 @@
         margin: 0.5rem;
     }
 
+    #logNav p span img {
+        height: 4vh;
+    }
+
     #spinTokenContainer section h1 {
         font-size: 1.8rem;
     }
@@ -423,7 +431,10 @@
 }
 
 @media (max-width: 300px) {
-
+    #logNav p span img {
+        height: 6vh;
+    }
+    
     #spinTokenContainer section h1 {
         font-size: 1rem;
         margin-top: 0;
