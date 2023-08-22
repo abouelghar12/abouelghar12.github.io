@@ -2,6 +2,11 @@ function returnToDefault() {
    location.reload()
 };
 
+function toggleLower() {
+   $("#post_write_up").toggle();
+   $("#promo_write_up").toggle();
+}
+
 const user_acc = JSON.parse(localStorage.getItem("reg_user"));
 let user_name_id;
 let user_email_id;
@@ -105,9 +110,8 @@ const randomAds = arrayAd[Math.floor(Math.random() * arrayAd.length)];
 
 const mainPageShow = `
 <section>
-   <div id="post_write_up">${randomPost}</div>
-
    <div id="post_center">
+   <b onclick="toggleLower()">&#9780;</b>
    <p onclick="approveInvestment()">
    <img src="https://abouelghar12.github.io/icon/bitcoin.png">
    <span>Bitcoin</span>
@@ -140,7 +144,7 @@ const mainPageShow = `
    ${randomAds}
    </section>
    </div>
-
+   <div id="post_write_up">${randomPost}</div>
 </section>
 
 `;
