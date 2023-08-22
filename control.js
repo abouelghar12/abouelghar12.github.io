@@ -700,7 +700,7 @@ function openMailbox() {
         <p><b>Binance <sup>TM</sup></b></p>
         <p><b>Re:</b> ${mailbox.id}</p>
         <div>
-        We have received your email and have assigned ${mailbox.ticket}.
+        We have received your email and have assigned <b>${mailbox.ticket}</b>.
         <br/>
         Please do not resend this message.
         <br/>
