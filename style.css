@@ -184,7 +184,12 @@
 }
 
 #wallet_table table {
-    color: white;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#wallet_table th h1 {
+    font-size: 2rem;
+    color: gold;
 }
 
 #wallet_table select {
