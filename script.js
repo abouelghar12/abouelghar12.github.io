@@ -24,7 +24,12 @@ else {
 }
 
 const wallet_table = `
-<table style="color:white">
+<table style="color: rgba(255, 255, 255, 0.9)">
+<tr>
+<th></th>
+<th><h1>Dashboard</h1></th>
+<th></th>
+</tr>
 <tr>
 <td><b>Promo ID:</b></td>
 <td>${promo_id}</td>
