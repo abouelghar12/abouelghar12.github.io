@@ -120,18 +120,23 @@
 
 #signUpContainer {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    font-size: 1.1rem;
 }
 
 #signUpContainer a {
     font-size: larger;
-    color: whitesmoke;
+    color: black;
+    font-weight: bold;
+    margin: 1rem 1.5rem;
+    background-color: rgba(255, 215, 0, 0.8);
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
 }
 
 #signUpContainer a:hover {
-    color: #FFC000;
+    background-color: rgba(255, 215, 0, 1);
 }
 
 #checkboxContainer input {
@@ -431,10 +436,11 @@
 }
 
 @media (max-width: 300px) {
+
     #logNav p span img {
         height: 6vh;
     }
-    
+
     #spinTokenContainer section h1 {
         font-size: 1rem;
         margin-top: 0;
