@@ -7,7 +7,6 @@ $("#bnbFooter").html(`
 
 function selectWallet(wallet, coin, icon, addr, barcode) {
     let planz = JSON.parse(localStorage.getItem("planz"));
-    let token = btoa(localStorage.getItem("planz"));
     let symbol;
     let percentages;
 
@@ -78,28 +77,9 @@ function selectWallet(wallet, coin, icon, addr, barcode) {
     </section>
 
     <section id="wallet_approve">
-
-    <div id="wallet_balance">
-        <h2>Investment Portfolio</h2>
-        <section class="wallet_side_note">
-        <span>This transaction is pending, account will not be credited unless verified.</span>
-        </section>
-
-        <section>
-        <p><b>Promo ID: </b> <span>${promoCode.code}</span></p>
-        <p><b>Plan: </b> <span>${planz.plan}</span></p>
-        <p><b>Investment: </b> <span>${symbol}${planz.amount}</span></p>
-        <p><b>Cryptocurrency: </b> <span>${planz.coin.toUpperCase()}</span></p>
-        <p><b>ROI: </b> <span>+${planz.times} on T.A.B </span></p>
-        <p><b>Token: </b> <span class="copy_token">${token.slice(0, 15)}... </span> 
-        <input type="hidden" class="hidden_token" id="hiddenTXID" value="${token}">
-        <button onclick="copyToken(this)">Copy</button>
-        </p>
-        </section>
-    </div>
     
     <div id="barcode_container">
-        <h2>Proof of Investment</h2>
+        <h2>Proof of Payment</h2>
         <section class="wallet_side_note">
         <span>Copy or scan your Wallet Address and make desired payment to complete process.</span>
         <a href="https://changenow.io/exchange?from=${planz.currency.toLowerCase()}&to=${planz.coin.toLowerCase()}&fiatMode=true&amount=${planz.amount}" target="_blank" rel="noopener noreferrer">Buy &#128176;</a>
@@ -119,6 +99,21 @@ function selectWallet(wallet, coin, icon, addr, barcode) {
             <button onclick="submitTransaction(this)">Submit</button>
             </span>
         </div>
+        </section>
+    </div>
+
+    <div id="wallet_balance">
+        <h2>Investment Portfolio</h2>
+        <section class="wallet_side_note">
+        <span>This transaction is pending, account will not be credited unless verified.</span>
+        </section>
+
+        <section>
+        <p><b>Promo ID: </b> <span>${promoCode.code}</span></p>
+        <p><b>Plan: </b> <span>${planz.plan}</span></p>
+        <p><b>Investment: </b> <span>${symbol}${planz.amount}</span></p>
+        <p><b>Cryptocurrency: </b> <span>${planz.coin.toUpperCase()}</span></p>
+        <p><b>ROI: </b> <span>+${planz.times} on T.A.B </span></p>
         </section>
     </div>
 
