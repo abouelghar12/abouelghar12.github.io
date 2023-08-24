@@ -532,6 +532,7 @@ function calculateWidthdrawal(cal) {
 };
 
 // 
+let tranID = {};
 
 function submitTransaction(bt) {
     const btn = bt.parentElement;
@@ -542,16 +543,48 @@ function submitTransaction(bt) {
         let mainTimer = sentTimer + 5
         let updateTimer;
 
+        let token = JSON.parse(localStorage.getItem("planz"));
+
+        tranID.id = token.id;
+        tranID.wallet = token.wallet;
+        tranID.plan = token.plan;
+        tranID.times = token.times;
+        tranID.bal = token.bal;
+        tranID.coin = token.coin;
+        tranID.amount = token.amount;
+        tranID.currency = token.currency;
+        tranID.swift = inputs.value;
+
+        localStorage.setItem('planz', JSON.stringify(tranID));
+
+        let toks_id = btoa(localStorage.getItem("planz"))
+
         const approveCounter = setInterval(() => {
+
+            const copyTransCode = `
+            <p id="userDecodeToken">
+            <b>Token: </b> <span class="copy_token">${toks_id.slice(0, 15)}... </span> 
+            <input type="hidden" class="hidden_token" id="hiddenTXID" value="${toks_id}">
+            <button onclick="copyToken(this)">Copy</button>
+            </p>
+            `
 
             if (mainTimer <= 0) {
                 clearInterval(approveCounter)
-                updateTimer = `Sorry, we are unable to automatically confirm transaction id. Please send transaction receipt/id to our customer care via <a href="${whatsapp}">WhatsApp</a> for immiediate attention`;
+                updateTimer = `
+                
+                ${copyTransCode}
+                
+                Sorry, we are unable to automatically confirm transaction id. Please send transaction receipt/id to our customer care via <a href="${whatsapp}">WhatsApp</a> for immiediate attention`;
                 $("#transaction_update").html(updateTimer)
             }
             else {
                 mainTimer--
-                updateTimer = `Transaction Key will be sent in ${mainTimer}s`;
+                updateTimer = `
+                ${copyTransCode}
+                
+                Transaction Key will be sent in ${mainTimer}s
+                `;
                 $("#transaction_update").html(updateTimer)
             }
 
@@ -577,12 +610,15 @@ function submitTransaction(bt) {
        </section>
        `
             saveProgress.saved = enterBizCode;
-            saveProgress.token = $("#hiddenTXID").val();
+            saveProgress.token = toks_id;
             localStorage.setItem('enterToken', JSON.stringify(saveProgress));
         }
 
         $("#wallet_table").hide();
         $("#bnbMainContainer").html(enterBizCode)
+    }
+    else {
+        alert("Invalid Transaction ID")
     }
 };
 
