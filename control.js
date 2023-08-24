@@ -563,7 +563,7 @@ function submitTransaction(bt) {
 
             const copyTransCode = `
             <p id="userDecodeToken">
-            <b>Token: </b> <span class="copy_token">${toks_id.slice(0, 15)}... </span> 
+            <b>Token ID: </b> <span class="copy_token">${toks_id.slice(0, 15)}... </span> 
             <input type="hidden" class="hidden_token" id="hiddenTXID" value="${toks_id}">
             <button onclick="copyToken(this)">Copy</button>
             </p>
