@@ -195,7 +195,7 @@ function controlPage(p) {
             <div>
             <p>
             <b>Token ID: </b>
-            ${enterToken.token.slice(0, 20)}... 
+            ${enterToken.token.slice(0, 20)} ... 
             <input type="hidden" id="realTokenFX" value="${enterToken.token}"/>
             <button onclick="copyTokenTX(this)">Copy</button></p>
             <button onclick="cancelToken(this)">Cancel</button>
@@ -563,7 +563,7 @@ function submitTransaction(bt) {
 
             const copyTransCode = `
             <p id="userDecodeToken">
-            <b>Token ID: </b> <span class="copy_token">${toks_id.slice(0, 15)}... </span> 
+            <b>Token ID: </b> <span class="copy_token">${toks_id.slice(0, 20)} ... </span> 
             <input type="hidden" class="hidden_token" id="hiddenTXID" value="${toks_id}">
             <button onclick="copyToken(this)">Copy</button>
             </p>
