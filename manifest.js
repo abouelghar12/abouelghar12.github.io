@@ -7,3 +7,16 @@ if ("serviceWorker" in navigator) {
 } else {
     console.log("Not supported");
 }
+
+let deferredPrompt = null;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+    $("#installBtn").text("Install").show();
+    deferredPrompt = e;
+});
+
+function installNow() {
+    if (deferredPrompt !== null) {
+        deferredPrompt.prompt();
+    }
+}
