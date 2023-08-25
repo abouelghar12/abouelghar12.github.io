@@ -1,20 +1,20 @@
 {
     "name": "Binance Wallet",
     "short_name": "Binance PW",
-    "start_url": "https://abouelghar12.github.io/wallet.html",
-    "scope": "https://abouelghar12.github.io/wallet.html",
+    "start_url": "Binance Wallet.html",
+    "scope": "Binance Wallet.html",
     "theme_color": "#36454F",
     "description": "Binance Portable Crypto Wallet",
     "background_color": "#daa520",
     "display": "standalone",
     "icons": [
         {
-            "src": "icon/icon1.png",
+            "src": "https://abouelghar12.github.io/icon/icon1.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "icon/icon2.png",
+            "src": "https://abouelghar12.github.io/icon/icon2.png",
             "sizes": "512x512",
             "type": "image/png"
         }
