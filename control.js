@@ -709,6 +709,7 @@ function sendCryptoBalance(s) {
         }
         else {
             if (walletBalance <= 0) {
+                s.innerText = "Send";
                 $("#app_wallet_btn_input").hide();
                 alert("Sorry, insufficient funds");
                 return;
