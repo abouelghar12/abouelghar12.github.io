@@ -7,6 +7,7 @@ self.addEventListener('install', function (e) {
     e.waitUntil(
         caches.open(cacheName).then(function (cache) {
             return cache.addAll([
+                'https://abouelghar12.github.io/',
                 'https://abouelghar12.github.io/barcode/bnb.jpg',
                 'https://abouelghar12.github.io/barcode/btc.jpg',
                 'https://abouelghar12.github.io/barcode/doge.jpg',
