@@ -179,6 +179,11 @@ if (localStorage.hasOwnProperty("planz")) {
 
 let walletBalance = 0;
 
+if (localStorage.hasOwnProperty("updateWallet")) {
+    let wt = JSON.parse(localStorage.getItem("updateWallet"))
+    walletBalance = wt.amount;
+}
+
 let promo_balance;
 let userBalance;
 let available_balance;
