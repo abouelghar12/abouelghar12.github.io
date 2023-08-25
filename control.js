@@ -299,9 +299,9 @@ function getAppPlan(p) {
     if (p.innerText == "Select") {
         $(choosePlan).html(selectAmount);
         p.innerText = "Continue";
+        $("#reset_investment_btn").css({ "visibility": "visible" })
     }
     else if (p.innerText == "Continue") {
-
         if (chooseAmount.value == "") {
             alert("Enter Amount in Figures");
         }
@@ -388,9 +388,14 @@ function getWalletAddr(c) {
 }
 
 function investmentAmount(a) {
-    let less = a.value
-    if (less < 0) {
-        a.value = "";
+
+    if (isNaN(a.value)) {
+        alert("Invalid Number")
+    }
+    else {
+        if (a.value < 0) {
+            a.value = 0
+        }
     }
 }
 
@@ -824,6 +829,30 @@ function sendAppMsg(m) {
                     homeBtn();
                 }, 3000);
             }, randCounter);
+        }
+    }
+};
+
+function amountToBuy(amt, sym) {
+    let planz = JSON.parse(localStorage.getItem("planz"));
+    amt = planz.amount
+    sym = planz.currency
+
+    for (let i = 0; i < fiat_currency.length; i++) {
+        if (fiat_currency[i].id == sym) {
+            let rate = amt / fiat_currency[i].rate;
+            if (parseInt(rate) <= 20000) {
+                let url = `https://changenow.io/exchange?from=${planz.currency.toLowerCase()}&to=${planz.coin.toLowerCase()}&fiatMode=true&amount=${planz.amount}`;
+
+                window.open(
+                    url,
+                    '_blank'
+                );
+            }
+            else {
+                alert("Sorry, you have excided the limit ($20,000) you can buy at a time.");
+                return;
+            }
         }
     }
 }
