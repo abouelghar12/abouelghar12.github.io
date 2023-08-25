@@ -72,33 +72,32 @@ function selectWallet(wallet, coin, icon, addr, barcode) {
     <div id="wallet_selected">
 
     <section id="wallet_header">
-    <img src="https://abouelghar12.github.io/${icon}"/>
+    <img src="${icon}"/>
     <span>${coin}</span>
     </section>
 
     <section id="wallet_approve">
-    
-    <div id="barcode_container">
+        <div id="barcode_container">
         <h2>Proof of Payment</h2>
         <section class="wallet_side_note">
-        <span>Copy or scan your Wallet Address and make desired payment to complete process.</span>
-        <a href="https://changenow.io/exchange?from=${planz.currency.toLowerCase()}&to=${planz.coin.toLowerCase()}&fiatMode=true&amount=${planz.amount}" target="_blank" rel="noopener noreferrer">Buy &#128176;</a>
+            <span>Copy or scan your Wallet Address and make desired payment to complete process.</span>
+            <a href="#" onclick="amountToBuy(this)")>Buy &#128176;</a>
         </section>
 
         <section id="barcode_swift_code">
-        <div>
-        <img src="https://abouelghar12.github.io/${barcode}" alt="${coin}"/>
-        <input type="hidden" value="${addr}" id="coin_addr" class="copy_addr"/>
-        <button onclick="copyCoinAddress(this)">Copy Address</button>
-        </div>
+            <div>
+            <img src="${barcode}" alt="${coin}"/>
+            <input type="hidden" value="${addr}" id="coin_addr" class="copy_addr"/>
+            <button onclick="copyCoinAddress(this)">Copy Address</button>
+            </div>
 
-        <div>
+            <div>
             <h4>Transaction ID:</h4>
             <span>
             <input class="confirm_transactions" type="text" placeholder="Enter Transaction ID"/>
             <button onclick="submitTransaction(this)">Submit</button>
             </span>
-        </div>
+            </div>
         </section>
     </div>
 
