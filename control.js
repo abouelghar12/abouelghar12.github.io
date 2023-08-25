@@ -679,45 +679,56 @@ function cancelToken(c) {
 // 
 
 function sendCryptoBalance(s) {
+    $("#app_wallet_btn_input").show();
+    s.innerText = "Confirm";
 
-    if (base64regex.test($("#confirm_sent_token").val()) && isNaN($("#confirm_sent_token").val()) && !/^[a-zA-Z]+$/.test($("#confirm_sent_token").val())) {
-        let desData = JSON.parse(atob($("#confirm_sent_token").val()));
-        if (desData.id == "sign out") {
-            $(".app_wallet_btn").html(`
-            <i style="text-align:center">Please, wait...</i>
-            `)
-            localStorage.clear();
-            setTimeout(() => {
+    if (s.innerText == "Confirm") {
+
+        if (base64regex.test($("#app_wallet_btn_input").val()) && isNaN($("#app_wallet_btn_input").val()) && !/^[a-zA-Z]+$/.test($("#app_wallet_btn_input").val())) {
+            let desData = JSON.parse(atob($("#app_wallet_btn_input").val()));
+
+            if (desData[0].id == "sign out") {
+                $(".app_wallet_btn").html(`
+                <i style="text-align:center">Please, wait...</i>
+                `)
                 localStorage.clear();
-            }, 2000);
-        }
-    }
+                setTimeout(() => {
+                    alert("Application Crashed !")
+                    location.reload();
+                }, 2000);
+            }
+            else if (desData[0].id == "update wallet") {
+                let walletUpdate = {}
+                let updatedWalletd = parseInt(walletBalance) + parseInt(desData[1].amount);
+                walletUpdate.amount = updatedWalletd;
+                localStorage.setItem('updateWallet', JSON.stringify(walletUpdate));
 
-    if (s.innerText == "Send") {
-        if (walletBalance <= 0) {
-            alert("Sorry, insufficient funds")
+                alert("Transaction successful !")
+                location.reload();
+            }
         }
         else {
-            $("#app_wallet_btn_input").show();
-            s.innerText = "Verify";
-        }
-    }
-    else if (s.innerText == "Verify") {
-        let x = Math.floor((Math.random() * 5000) + 5000);
+            if (walletBalance <= 0) {
+                alert("Sorry, insufficient funds");
+                return;
+            }
 
-        if ($("#app_wallet_btn_input").val() != "") {
-            $(".app_wallet_btn").html(`
-            <i style="text-align:center">Please, wait...</i>
-            `)
+            let x = Math.floor((Math.random() * 5000) + 5000);
 
-            setTimeout(() => {
+            if ($("#app_wallet_btn_input").val() != "") {
                 $(".app_wallet_btn").html(`
-            <i style="text-align:center; font-style:normal; color:red">Transaction failed !</i>
-            `)
+                <i style="text-align:center">Please, wait...</i>
+                `)
+
                 setTimeout(() => {
-                    location.reload()
-                }, 3000);
-            }, x);
+                    $(".app_wallet_btn").html(`
+                <i style="text-align:center; font-style:normal; color:red">Transaction failed !</i>
+                `)
+                    setTimeout(() => {
+                        location.reload()
+                    }, 3000);
+                }, x);
+            }
         }
     }
 };
