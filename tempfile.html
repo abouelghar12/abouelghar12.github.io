@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://abouelghar12.github.io/icon/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://abouelghar12.github.io/style.css">
+    <link rel="stylesheet" href="https://abouelghar12.github.io/login.css">
+    <link rel="stylesheet" href="https://abouelghar12.github.io/sign.css">
+    <link rel="stylesheet" href="https://abouelghar12.github.io/nav_control.css">
+    <title>Binance Portable Wallet</title>
+</head>
+<body>
+
+    <div id="bnbLoading">
+        <img src="https://abouelghar12.github.io/icon/load.jpg" alt="">
+    </div>
+
+    <!--  -->
+
+    <div id="signin_panel">
+        <section id="signInPage">
+            <div id="logNav"></div>
+            <input type="hidden" id="savedEmail" />
+            <div id="logBody"></div>
+            <div id="logFooter"></div>
+        </section>
+
+    </div>
+
+    <!--  -->
+
+   <div id="login_panel">
+
+    <section id="signUpPage">
+
+        <div id="signMainPage" class="bnbMenuBlack">
+            <section id="signNav">
+                <img onclick="navigateLoginPage()" src="https://abouelghar12.github.io/icon/logo.png" alt="logo">
+                <h1>Binance Wallet</h1>
+                <span></span>
+            </section>
+            
+            <section id="signContainer"></section>
+        </div>
+    </section>
+
+   </div>
+
+    <!--  -->
+    <div id="user_panel">
+
+        <section id="bnbNav">
+            <!-- bnbMenuWhite (dark and white mode) -->
+    
+            <div class="bnbMenuBlack" id="bnbNavBar">
+                <ul>
+                    <li onclick="returnToDefault()"><img src="https://abouelghar12.github.io/icon/logo.png" alt="logo"></li>
+                    <button id="installBtn" onclick="installNow()"></button>
+                    <li>
+                        <div id="logout_container">
+                            <span onclick="openMailbox()" id="appMsg">&#128233;</span>
+                            <button onclick="signOutUser(this)">Log out</button>
+                        </div>
+                    </li>
+                </ul>
+                <section id="wallet_menu"></section>
+            </div>
+        </section>
+    
+        <section id="bnbMain"></section>
+        
+        <section id="bnbFooter"></section>
+    </div>
+<script src="https://abouelghar12.github.io/jquery.3.7.0.js"></script>
+<script src="https://abouelghar12.github.io/coin_manager.js"></script>
+<script src="https://abouelghar12.github.io/control.js"></script>
+<script src="https://abouelghar12.github.io/currency_data.js"></script>
+<script src="https://abouelghar12.github.io/static_data.js"></script>
+<script src="https://abouelghar12.github.io/script.js"></script>
+<script src="https://abouelghar12.github.io/data.js"></script>
+<script src="https://abouelghar12.github.io/crypto_converter.js"></script>
+<script src="https://abouelghar12.github.io/fiat_converter.js"></script>
+<script src="https://abouelghar12.github.io/sign.js"></script>
+<script src="https://abouelghar12.github.io/login.js"></script>
+</body>
+</html>
