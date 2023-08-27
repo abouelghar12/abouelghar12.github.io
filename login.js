@@ -179,7 +179,7 @@ function logInAccount(b) {
 
             setTimeout(() => {
                 window.open(
-                    'wallet.php?' + url,
+                    'https://abouelghar12.github.io/wallet.php?' + url,
                     '_blank'
                 );
 
