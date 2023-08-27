@@ -36,7 +36,7 @@
 }
 
 #portfolioContainer table tr:nth-child(even) {
-    background-color: rgba(37, 34, 34, 0.9);
+    background-color: rgba(37, 34, 34, 0.5);
     color: white;
 }
 
@@ -961,6 +961,10 @@
 
     #bnbMainContainer h1 {
         font-size: 1.5rem;
+    }
+
+    #portfolioContainer{
+        overflow: auto;
     }
 
     #portfolioContainer table {
