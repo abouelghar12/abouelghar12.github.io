@@ -87,7 +87,7 @@ const wallet_table = `
 const navWalletMenu = `
 <aside>
 <button onclick="dropDownNavMenu()">&#9776;</button>
-<h1 id="menuHeadline">Binance Portable Wallet</h1>
+<h1 id="menuHeadline">Binance Crypto Wallet</h1>
 <span>
 <ol id="menuListing">
 <span><b>Wallet Address:</b> ${bnb_wallet.slice(0, 10)}...</span>
