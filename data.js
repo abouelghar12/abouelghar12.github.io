@@ -72,7 +72,7 @@ function selectWallet(wallet, coin, icon, addr, barcode) {
     <div id="wallet_selected">
 
     <section id="wallet_header">
-    <img src="${icon}"/>
+    <img src="https://abouelghar12.github.io/${icon}"/>
     <span>${coin}</span>
     </section>
 
@@ -86,7 +86,7 @@ function selectWallet(wallet, coin, icon, addr, barcode) {
 
         <section id="barcode_swift_code">
             <div>
-            <img src="${barcode}" alt="${coin}"/>
+            <img src="https://abouelghar12.github.io/${barcode}" alt="${coin}"/>
             <input type="hidden" value="${addr}" id="coin_addr" class="copy_addr"/>
             <button onclick="copyCoinAddress(this)">Copy Address</button>
             </div>
