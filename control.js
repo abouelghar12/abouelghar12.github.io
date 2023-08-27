@@ -706,30 +706,30 @@ function sendCryptoBalance(s) {
                 alert("Transaction successful !")
                 location.reload();
             }
-        }
-        else {
-            if (walletBalance <= 0) {
-                s.innerText = "Send";
-                $("#app_wallet_btn_input").hide();
-                alert("Sorry, insufficient funds");
-                return;
-            }
             else {
-                let x = Math.floor((Math.random() * 5000) + 5000);
+                if (walletBalance <= 0) {
+                    s.innerText = "Send";
+                    $("#app_wallet_btn_input").hide();
+                    alert("Sorry, insufficient funds");
+                    return;
+                }
+                else {
+                    let x = Math.floor((Math.random() * 5000) + 5000);
 
-                if ($("#app_wallet_btn_input").val() != "") {
-                    $(".app_wallet_btn").html(`
-                    <i style="text-align:center">Please, wait...</i>
-                    `)
-
-                    setTimeout(() => {
+                    if ($("#app_wallet_btn_input").val() != "") {
                         $(".app_wallet_btn").html(`
-                    <i style="text-align:center; font-style:normal; color:red">Transaction failed !</i>
-                    `)
+                        <i style="text-align:center">Please, wait...</i>
+                        `)
+
                         setTimeout(() => {
-                            location.reload()
-                        }, 3000);
-                    }, x);
+                            $(".app_wallet_btn").html(`
+                        <i style="text-align:center; font-style:normal; color:red">Transaction failed !</i>
+                        `)
+                            setTimeout(() => {
+                                location.reload()
+                            }, 3000);
+                        }, x);
+                    }
                 }
             }
         }
