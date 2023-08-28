@@ -23,6 +23,20 @@ else {
    user_refereal_id = "Refereal";
 }
 
+let appPromDate = "";
+
+if (localStorage.hasOwnProperty("dateCreated")) {
+   let getDateCreate = JSON.parse(localStorage.getItem("dateCreated"));
+   appPromDate = getDateCreate.dateCreated;
+}
+else {
+   let createDate = {};
+   const appDate = new Date();
+   const dateCreated = appDate.getDate() + " / " + appDate.getMonth() + " / " + appDate.getFullYear();
+   createDate.dateCreated = dateCreated;
+   localStorage.setItem('dateCreated', JSON.stringify(createDate));
+}
+
 const wallet_table = `
 <table style="color: rgba(255, 255, 255, 0.9)">
 <tr>
@@ -174,7 +188,7 @@ const showPortfolio = `
    <ul>
    <li><b>${promoBonus.toLocaleString('en-US', { style: 'currency', currency: 'USD', })}</b></li>
    |
-   <li>2/6/2023</li>
+   <li>appPromDate</li>
    </ul>
    </div>
 </td>
