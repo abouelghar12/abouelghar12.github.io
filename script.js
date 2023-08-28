@@ -188,7 +188,7 @@ const showPortfolio = `
    <ul>
    <li><b>${promoBonus.toLocaleString('en-US', { style: 'currency', currency: 'USD', })}</b></li>
    |
-   <li>appPromDate</li>
+   <li>${appPromDate}</li>
    </ul>
    </div>
 </td>
