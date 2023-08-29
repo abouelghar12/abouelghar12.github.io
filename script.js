@@ -187,7 +187,7 @@ const showPortfolio = `
    <div id="bonus_amount_row" class="table_amount_row">
    <ul>
    <li><b>${promoBonus.toLocaleString('en-US', { style: 'currency', currency: 'USD', })}</b></li>
-   |
+   <br/>
    <li>${appPromDate}</li>
    </ul>
    </div>
