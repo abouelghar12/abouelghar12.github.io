@@ -58,6 +58,7 @@
     display: flex;
     list-style: none;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 0.5rem;
 }
 
