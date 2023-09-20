@@ -4,16 +4,21 @@ const usdt_wallet = "0x201f0E3BF1B176Ef29FEA4ac655c2c9627AB9586";
 const eth_wallet = "0x201f0E3BF1B176Ef29FEA4ac655c2c9627AB9586";
 const doge_wallet = "DLWzV8G5QE6xSu2AKvJ6Eq2DHaRgdnCxxp";
 const admin_email = "cryptocurrency@binance.com";
+let whatsapp;
 
-if ($("customer_center").val() == "anyi") {
-    const whatsapp = 'https://wa.me/15184680065';
-}
-else if ($("customer_center").val() == "akpaz") {
-    const whatsapp = 'https://wa.me/601111625319';
-}
-else {
-    const whatsapp = 'https://wa.me/16163302531';
-}
+setTimeout(() => {
+
+    if ($("#customer_center").val() == "anyi") {
+        whatsapp = 'https://wa.me/15184680065';
+    }
+    else if ($("#customer_center").val() == "akpaz") {
+        whatsapp = 'https://wa.me/601111625319';
+    }
+    else {
+        whatsapp = 'https://wa.me/16163302531';
+    }
+
+}, 2000);
 // 
 
 if (!localStorage.hasOwnProperty('bonus')) {
